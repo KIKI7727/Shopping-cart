@@ -1,18 +1,18 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Shoppping-cart' do
+target 'Shopping-cart' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Shoppping-cart
+  # Pods for Shopping-cart
 
-  target 'Shoppping-cartTests' do
+  target 'Shopping-cartTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'Shoppping-cartUITests' do
+  target 'Shopping-cartUITests' do
     # Pods for testing
   end
 
