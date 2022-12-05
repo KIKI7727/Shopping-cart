@@ -1,6 +1,6 @@
 //
-//  Shoppping_cartUITestsLaunchTests.swift
-//  Shoppping-cartUITests
+//  Shopping_cartUITestsLaunchTests.swift
+//  Shopping-cartUITests
 //
 //  Created by cai dongyu on 2022/12/5.
 //

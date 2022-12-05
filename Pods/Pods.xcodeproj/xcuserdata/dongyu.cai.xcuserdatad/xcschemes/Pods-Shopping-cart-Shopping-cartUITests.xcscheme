@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "60FFD94BE8498EEE9D8DA2F5FC32D355"
-               BuildableName = "Pods_Shoppping_cart.framework"
-               BlueprintName = "Pods-Shoppping-cart"
+               BlueprintIdentifier = "47D2B4514C3AD30F167E0FD9C6B4D39C"
+               BuildableName = "Pods_Shopping_cart_Shopping_cartUITests.framework"
+               BlueprintName = "Pods-Shopping-cart-Shopping-cartUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

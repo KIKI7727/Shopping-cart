@@ -4,4 +4,3 @@ framework module Pods_Shopping_cart_Shopping_cartUITests {
   export *
   module * { export * }
 }
-

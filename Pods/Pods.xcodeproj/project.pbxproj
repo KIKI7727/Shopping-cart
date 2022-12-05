@@ -7,101 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D97DF63E53CFD7F15755199F902101D /* Pods-Shoppping-cartTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E7153FB8EA4EDA50591FD6B669B0CA /* Pods-Shoppping-cartTests-dummy.m */; };
-		20D2E1F945CC35884551F58D1B3AA5DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3AD364BE629942E527DB264B155C55A8 /* Pods-Shoppping-cartTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27636F18E3D6B710053F00E1A4BE2920 /* Pods-Shoppping-cartTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42E909A9BE891398362A8AA6694B8AD7 /* Pods-Shoppping-cart-Shoppping-cartUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AA60F8AA25D0BB44BD2B289C734F2C /* Pods-Shoppping-cart-Shoppping-cartUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		508B86076C445BF763E0C907E58C9C8A /* Pods-Shoppping-cart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 993F0610484D49C383E92D9E64C14C2F /* Pods-Shoppping-cart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57C647C06CE9144928E52F57589FBF7E /* Pods-Shoppping-cart-Shoppping-cartUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8731BA340EAE9624CBD7951A16382B7 /* Pods-Shoppping-cart-Shoppping-cartUITests-dummy.m */; };
-		70ADB1613DE8BA5679F1497809E712D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		98D646A76B1189814538B0A0865BEF01 /* Pods-Shoppping-cart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF707368FBC6B433EF6990272EE51E4C /* Pods-Shoppping-cart-dummy.m */; };
-		99006221FC13D0449054579D80BF444F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0892C6163CCBE33E09523F559504E47B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3EDB828059CD7D74C651BBB84D0AA227 /* Pods-Shopping-cart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A992AB43674CA47DC08506CB964D29B8 /* Pods-Shopping-cart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57865AD437EB58F91199CC60AB90A70C /* Pods-Shopping-cart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 788209A930637E7D47390EFAE1CF683F /* Pods-Shopping-cart-dummy.m */; };
+		701FB1E1629260DB4A634A3E2EB93FD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		81CA990B664785C5D3766FF64F42BB90 /* Pods-Shopping-cart-Shopping-cartUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47292910400328B585EAA4D62FB1432E /* Pods-Shopping-cart-Shopping-cartUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E1560A6DF0E4FC22F4AE8EB8C1BF55E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B5BE53A34FDB548B99A288CDBCE935EB /* Pods-Shopping-cartTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2330449481B61C6B5186E4069C34180 /* Pods-Shopping-cartTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC01F822FE626CF95345730460D82E3E /* Pods-Shopping-cartTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EE11FA0707884E825F7E786828E857 /* Pods-Shopping-cartTests-dummy.m */; };
+		FEEE5EDB9541583BDB8187FF082A0934 /* Pods-Shopping-cart-Shopping-cartUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F39D67C1C163919AC2967DC6B9E0A7 /* Pods-Shopping-cart-Shopping-cartUITests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8550840E07EAD1F9C709A04F154A4006 /* PBXContainerItemProxy */ = {
+		F8077E5F035712168AE340DA4A566835 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 60FFD94BE8498EEE9D8DA2F5FC32D355;
-			remoteInfo = "Pods-Shoppping-cart";
+			remoteGlobalIDString = 05DE3A2A7AD3D1936F96B47FC29DFE75;
+			remoteInfo = "Pods-Shopping-cart";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		062D4164B0D18A39C7AC35B99E548F15 /* Pods-Shoppping-cartTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shoppping-cartTests-Info.plist"; sourceTree = "<group>"; };
-		07CCEDDE83F76CDD83D657C29E107F9B /* Pods-Shoppping-cart-Shoppping-cartUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shoppping-cart-Shoppping-cartUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		19E7153FB8EA4EDA50591FD6B669B0CA /* Pods-Shoppping-cartTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shoppping-cartTests-dummy.m"; sourceTree = "<group>"; };
-		27636F18E3D6B710053F00E1A4BE2920 /* Pods-Shoppping-cartTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shoppping-cartTests-umbrella.h"; sourceTree = "<group>"; };
-		352CFD55E83480AC19526F0CD89D30B0 /* Pods-Shoppping-cart-Shoppping-cartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shoppping-cart-Shoppping-cartUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3C494544C53AA825C27E487B804C4DBB /* Pods-Shoppping-cart-Shoppping-cartUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Shoppping-cart-Shoppping-cartUITests"; path = Pods_Shoppping_cart_Shoppping_cartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46A20CF28A9B85A7E839082628141403 /* Pods-Shoppping-cart-Shoppping-cartUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shoppping-cart-Shoppping-cartUITests.modulemap"; sourceTree = "<group>"; };
-		49D22D4370377DB99E7B7EE0251EC010 /* Pods-Shoppping-cartTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shoppping-cartTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5C557999530422D999094FB98C3E8C09 /* Pods-Shoppping-cart-Shoppping-cartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shoppping-cart-Shoppping-cartUITests.release.xcconfig"; sourceTree = "<group>"; };
-		608531FC39E4E288230F427150D53B48 /* Pods-Shoppping-cartTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shoppping-cartTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6443EF2639E1DD298294A2014E34BD6C /* Pods-Shoppping-cart-Shoppping-cartUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shoppping-cart-Shoppping-cartUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		711B72901488172CB186AA5D667A6C3A /* Pods-Shoppping-cart-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shoppping-cart-acknowledgements.plist"; sourceTree = "<group>"; };
+		06CAEC2016FFA3B340AC0E6D045333F8 /* Pods-Shopping-cart */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Shopping-cart"; path = Pods_Shopping_cart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F39D67C1C163919AC2967DC6B9E0A7 /* Pods-Shopping-cart-Shopping-cartUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shopping-cart-Shopping-cartUITests-dummy.m"; sourceTree = "<group>"; };
+		1825F620CCF76D6CC882DF3091A46C0B /* Pods-Shopping-cart-Shopping-cartUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shopping-cart-Shopping-cartUITests-Info.plist"; sourceTree = "<group>"; };
+		265E3C0EC0E7E5BE379CB5E098E1247B /* Pods-Shopping-cart-Shopping-cartUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shopping-cart-Shopping-cartUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4388FD9020767F5227B9CC817FBA61F0 /* Pods-Shopping-cart-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shopping-cart-acknowledgements.markdown"; sourceTree = "<group>"; };
+		45ECF0FED978169A3A4D1DB44B95FE1A /* Pods-Shopping-cartTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shopping-cartTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47292910400328B585EAA4D62FB1432E /* Pods-Shopping-cart-Shopping-cartUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shopping-cart-Shopping-cartUITests-umbrella.h"; sourceTree = "<group>"; };
+		4AEBC5413B7FF594E726DC2685CA8F62 /* Pods-Shopping-cart-Shopping-cartUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shopping-cart-Shopping-cartUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5FAD167778EB8832410BC0A56954A304 /* Pods-Shopping-cartTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shopping-cartTests.modulemap"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		78AA60F8AA25D0BB44BD2B289C734F2C /* Pods-Shoppping-cart-Shoppping-cartUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shoppping-cart-Shoppping-cartUITests-umbrella.h"; sourceTree = "<group>"; };
-		8BDEFAF390E6341E8A5D2BA2C124018D /* Pods-Shoppping-cart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shoppping-cart.release.xcconfig"; sourceTree = "<group>"; };
-		993F0610484D49C383E92D9E64C14C2F /* Pods-Shoppping-cart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shoppping-cart-umbrella.h"; sourceTree = "<group>"; };
+		788209A930637E7D47390EFAE1CF683F /* Pods-Shopping-cart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shopping-cart-dummy.m"; sourceTree = "<group>"; };
+		870E248936D1B476A9CE1EABAB36F2AF /* Pods-Shopping-cart-Shopping-cartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shopping-cart-Shopping-cartUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8852CEE255D4C447470A0CCF97298A75 /* Pods-Shopping-cart-Shopping-cartUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Shopping-cart-Shopping-cartUITests"; path = Pods_Shopping_cart_Shopping_cartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0B449C0B6EA51DE28B2CD01563FB452 /* Pods-Shoppping-cart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shoppping-cart-Info.plist"; sourceTree = "<group>"; };
-		A8E6CA3472FF9BF91726BA06A8AF1EA0 /* Pods-Shoppping-cart-Shoppping-cartUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shoppping-cart-Shoppping-cartUITests-Info.plist"; sourceTree = "<group>"; };
-		ADFB14B1DF021B23CD5A17A70D25E0FC /* Pods-Shoppping-cartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shoppping-cartTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C8731BA340EAE9624CBD7951A16382B7 /* Pods-Shoppping-cart-Shoppping-cartUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shoppping-cart-Shoppping-cartUITests-dummy.m"; sourceTree = "<group>"; };
-		CF707368FBC6B433EF6990272EE51E4C /* Pods-Shoppping-cart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shoppping-cart-dummy.m"; sourceTree = "<group>"; };
-		D21CA6ABE3188EAF3B6662185ABC7B5E /* Pods-Shoppping-cart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shoppping-cart.debug.xcconfig"; sourceTree = "<group>"; };
-		D25D196F5302D065F04881A29A951EF0 /* Pods-Shoppping-cartTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shoppping-cartTests.modulemap"; sourceTree = "<group>"; };
-		D683F4F080BB14CE295324B11BE5BBB7 /* Pods-Shoppping-cart-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shoppping-cart-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E596B512EF46022A31A01D29078C3A4A /* Pods-Shoppping-cart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shoppping-cart.modulemap"; sourceTree = "<group>"; };
-		F503E6B9E4583B277CB8738B0E9B4D79 /* Pods-Shoppping-cart */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Shoppping-cart"; path = Pods_Shoppping_cart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6D68278282F2F5AEC17F9C5AB3C5B39 /* Pods-Shoppping-cartTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Shoppping-cartTests"; path = Pods_Shoppping_cartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7B24D7FE042E18717DF76EF84D2E191 /* Pods-Shoppping-cartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shoppping-cartTests.release.xcconfig"; sourceTree = "<group>"; };
+		A270BE25A40003A60D61A33500BAE700 /* Pods-Shopping-cart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shopping-cart.modulemap"; sourceTree = "<group>"; };
+		A80F36FD7C71594BD817D715FB2B6596 /* Pods-Shopping-cart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shopping-cart-Info.plist"; sourceTree = "<group>"; };
+		A85B129D22BB801FE05452D7E7A7C414 /* Pods-Shopping-cart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shopping-cart.release.xcconfig"; sourceTree = "<group>"; };
+		A992AB43674CA47DC08506CB964D29B8 /* Pods-Shopping-cart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shopping-cart-umbrella.h"; sourceTree = "<group>"; };
+		B51EC8A413FBF74B0F2956EE282BFAE5 /* Pods-Shopping-cartTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shopping-cartTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C375302C15DB935099089C11ECA8C14F /* Pods-Shopping-cart-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shopping-cart-acknowledgements.plist"; sourceTree = "<group>"; };
+		DE6A9C20AB9E1DADF16A0485B13DBF01 /* Pods-Shopping-cartTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shopping-cartTests-Info.plist"; sourceTree = "<group>"; };
+		E2330449481B61C6B5186E4069C34180 /* Pods-Shopping-cartTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shopping-cartTests-umbrella.h"; sourceTree = "<group>"; };
+		E2EBA918D5916CB838ACA11932DA8945 /* Pods-Shopping-cart-Shopping-cartUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shopping-cart-Shopping-cartUITests.modulemap"; sourceTree = "<group>"; };
+		E7EE11FA0707884E825F7E786828E857 /* Pods-Shopping-cartTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shopping-cartTests-dummy.m"; sourceTree = "<group>"; };
+		EA9C9CE436728293BDCAD3B4888C6C34 /* Pods-Shopping-cart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shopping-cart.debug.xcconfig"; sourceTree = "<group>"; };
+		EC590F6699E152509B05BA5A1CB9AFEC /* Pods-Shopping-cartTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Shopping-cartTests"; path = Pods_Shopping_cartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20B2361F82C737514E1447E7AA90E1F /* Pods-Shopping-cartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shopping-cartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9638C42A6AF95D05BA01C2470B7A386 /* Pods-Shopping-cartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shopping-cartTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF5F3FC423EC9946DD57B4146FDE63A1 /* Pods-Shopping-cart-Shopping-cartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shopping-cart-Shopping-cartUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3976C207414BD9698F4601A00785B8F4 /* Frameworks */ = {
+		1927A9E998BC74C72F89EEFA48CD6827 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70ADB1613DE8BA5679F1497809E712D1 /* Foundation.framework in Frameworks */,
+				8E1560A6DF0E4FC22F4AE8EB8C1BF55E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC57BF0C55F694C526685CE7E1CB36D8 /* Frameworks */ = {
+		3164E1F5F270CEAD51091A08D4692327 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99006221FC13D0449054579D80BF444F /* Foundation.framework in Frameworks */,
+				701FB1E1629260DB4A634A3E2EB93FD4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFB7EA2CF06D653B4EF5CB0D318B5C48 /* Frameworks */ = {
+		3F4B1B5AF5AA218133CB96192B83BCA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20D2E1F945CC35884551F58D1B3AA5DF /* Foundation.framework in Frameworks */,
+				0892C6163CCBE33E09523F559504E47B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B1A7042BAD53241DE1677187FD35FA5 /* Pods-Shoppping-cart-Shoppping-cartUITests */ = {
+		3FB22E8BAB8050344E8FCE5FCA3C7F58 /* Pods-Shopping-cartTests */ = {
 			isa = PBXGroup;
 			children = (
-				46A20CF28A9B85A7E839082628141403 /* Pods-Shoppping-cart-Shoppping-cartUITests.modulemap */,
-				6443EF2639E1DD298294A2014E34BD6C /* Pods-Shoppping-cart-Shoppping-cartUITests-acknowledgements.markdown */,
-				07CCEDDE83F76CDD83D657C29E107F9B /* Pods-Shoppping-cart-Shoppping-cartUITests-acknowledgements.plist */,
-				C8731BA340EAE9624CBD7951A16382B7 /* Pods-Shoppping-cart-Shoppping-cartUITests-dummy.m */,
-				A8E6CA3472FF9BF91726BA06A8AF1EA0 /* Pods-Shoppping-cart-Shoppping-cartUITests-Info.plist */,
-				78AA60F8AA25D0BB44BD2B289C734F2C /* Pods-Shoppping-cart-Shoppping-cartUITests-umbrella.h */,
-				352CFD55E83480AC19526F0CD89D30B0 /* Pods-Shoppping-cart-Shoppping-cartUITests.debug.xcconfig */,
-				5C557999530422D999094FB98C3E8C09 /* Pods-Shoppping-cart-Shoppping-cartUITests.release.xcconfig */,
+				5FAD167778EB8832410BC0A56954A304 /* Pods-Shopping-cartTests.modulemap */,
+				45ECF0FED978169A3A4D1DB44B95FE1A /* Pods-Shopping-cartTests-acknowledgements.markdown */,
+				B51EC8A413FBF74B0F2956EE282BFAE5 /* Pods-Shopping-cartTests-acknowledgements.plist */,
+				E7EE11FA0707884E825F7E786828E857 /* Pods-Shopping-cartTests-dummy.m */,
+				DE6A9C20AB9E1DADF16A0485B13DBF01 /* Pods-Shopping-cartTests-Info.plist */,
+				E2330449481B61C6B5186E4069C34180 /* Pods-Shopping-cartTests-umbrella.h */,
+				F20B2361F82C737514E1447E7AA90E1F /* Pods-Shopping-cartTests.debug.xcconfig */,
+				F9638C42A6AF95D05BA01C2470B7A386 /* Pods-Shopping-cartTests.release.xcconfig */,
 			);
-			name = "Pods-Shoppping-cart-Shoppping-cartUITests";
-			path = "Target Support Files/Pods-Shoppping-cart-Shoppping-cartUITests";
+			name = "Pods-Shopping-cartTests";
+			path = "Target Support Files/Pods-Shopping-cartTests";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -112,30 +112,46 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6E6D61EE8895D50700213EB3C33078FB /* Pods-Shoppping-cartTests */ = {
+		ACDD12FC034D16CB29F8AF01D50A6FDF /* Pods-Shopping-cart-Shopping-cartUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D25D196F5302D065F04881A29A951EF0 /* Pods-Shoppping-cartTests.modulemap */,
-				608531FC39E4E288230F427150D53B48 /* Pods-Shoppping-cartTests-acknowledgements.markdown */,
-				49D22D4370377DB99E7B7EE0251EC010 /* Pods-Shoppping-cartTests-acknowledgements.plist */,
-				19E7153FB8EA4EDA50591FD6B669B0CA /* Pods-Shoppping-cartTests-dummy.m */,
-				062D4164B0D18A39C7AC35B99E548F15 /* Pods-Shoppping-cartTests-Info.plist */,
-				27636F18E3D6B710053F00E1A4BE2920 /* Pods-Shoppping-cartTests-umbrella.h */,
-				ADFB14B1DF021B23CD5A17A70D25E0FC /* Pods-Shoppping-cartTests.debug.xcconfig */,
-				F7B24D7FE042E18717DF76EF84D2E191 /* Pods-Shoppping-cartTests.release.xcconfig */,
+				E2EBA918D5916CB838ACA11932DA8945 /* Pods-Shopping-cart-Shopping-cartUITests.modulemap */,
+				4AEBC5413B7FF594E726DC2685CA8F62 /* Pods-Shopping-cart-Shopping-cartUITests-acknowledgements.markdown */,
+				265E3C0EC0E7E5BE379CB5E098E1247B /* Pods-Shopping-cart-Shopping-cartUITests-acknowledgements.plist */,
+				08F39D67C1C163919AC2967DC6B9E0A7 /* Pods-Shopping-cart-Shopping-cartUITests-dummy.m */,
+				1825F620CCF76D6CC882DF3091A46C0B /* Pods-Shopping-cart-Shopping-cartUITests-Info.plist */,
+				47292910400328B585EAA4D62FB1432E /* Pods-Shopping-cart-Shopping-cartUITests-umbrella.h */,
+				870E248936D1B476A9CE1EABAB36F2AF /* Pods-Shopping-cart-Shopping-cartUITests.debug.xcconfig */,
+				FF5F3FC423EC9946DD57B4146FDE63A1 /* Pods-Shopping-cart-Shopping-cartUITests.release.xcconfig */,
 			);
-			name = "Pods-Shoppping-cartTests";
-			path = "Target Support Files/Pods-Shoppping-cartTests";
+			name = "Pods-Shopping-cart-Shopping-cartUITests";
+			path = "Target Support Files/Pods-Shopping-cart-Shopping-cartUITests";
 			sourceTree = "<group>";
 		};
-		9E6FDF6C374C97605177DFA88FC272B0 /* Products */ = {
+		B5A138FAE453A44714EC3F33A857FC95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F503E6B9E4583B277CB8738B0E9B4D79 /* Pods-Shoppping-cart */,
-				3C494544C53AA825C27E487B804C4DBB /* Pods-Shoppping-cart-Shoppping-cartUITests */,
-				F6D68278282F2F5AEC17F9C5AB3C5B39 /* Pods-Shoppping-cartTests */,
+				06CAEC2016FFA3B340AC0E6D045333F8 /* Pods-Shopping-cart */,
+				8852CEE255D4C447470A0CCF97298A75 /* Pods-Shopping-cart-Shopping-cartUITests */,
+				EC590F6699E152509B05BA5A1CB9AFEC /* Pods-Shopping-cartTests */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C0736B7C31FCB5AFF2551AC751A3CD2A /* Pods-Shopping-cart */ = {
+			isa = PBXGroup;
+			children = (
+				A270BE25A40003A60D61A33500BAE700 /* Pods-Shopping-cart.modulemap */,
+				4388FD9020767F5227B9CC817FBA61F0 /* Pods-Shopping-cart-acknowledgements.markdown */,
+				C375302C15DB935099089C11ECA8C14F /* Pods-Shopping-cart-acknowledgements.plist */,
+				788209A930637E7D47390EFAE1CF683F /* Pods-Shopping-cart-dummy.m */,
+				A80F36FD7C71594BD817D715FB2B6596 /* Pods-Shopping-cart-Info.plist */,
+				A992AB43674CA47DC08506CB964D29B8 /* Pods-Shopping-cart-umbrella.h */,
+				EA9C9CE436728293BDCAD3B4888C6C34 /* Pods-Shopping-cart.debug.xcconfig */,
+				A85B129D22BB801FE05452D7E7A7C414 /* Pods-Shopping-cart.release.xcconfig */,
+			);
+			name = "Pods-Shopping-cart";
+			path = "Target Support Files/Pods-Shopping-cart";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -143,25 +159,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				9E6FDF6C374C97605177DFA88FC272B0 /* Products */,
-				EE5CDE6B8E020F60DAB62948E9AD0A9E /* Targets Support Files */,
+				B5A138FAE453A44714EC3F33A857FC95 /* Products */,
+				F8BBD3ABD87207B80AC7F02285DA7991 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D21004ED302F5FC6209CE5AC45CAF82E /* Pods-Shoppping-cart */ = {
-			isa = PBXGroup;
-			children = (
-				E596B512EF46022A31A01D29078C3A4A /* Pods-Shoppping-cart.modulemap */,
-				D683F4F080BB14CE295324B11BE5BBB7 /* Pods-Shoppping-cart-acknowledgements.markdown */,
-				711B72901488172CB186AA5D667A6C3A /* Pods-Shoppping-cart-acknowledgements.plist */,
-				CF707368FBC6B433EF6990272EE51E4C /* Pods-Shoppping-cart-dummy.m */,
-				A0B449C0B6EA51DE28B2CD01563FB452 /* Pods-Shoppping-cart-Info.plist */,
-				993F0610484D49C383E92D9E64C14C2F /* Pods-Shoppping-cart-umbrella.h */,
-				D21CA6ABE3188EAF3B6662185ABC7B5E /* Pods-Shoppping-cart.debug.xcconfig */,
-				8BDEFAF390E6341E8A5D2BA2C124018D /* Pods-Shoppping-cart.release.xcconfig */,
-			);
-			name = "Pods-Shoppping-cart";
-			path = "Target Support Files/Pods-Shoppping-cart";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -172,12 +172,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EE5CDE6B8E020F60DAB62948E9AD0A9E /* Targets Support Files */ = {
+		F8BBD3ABD87207B80AC7F02285DA7991 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D21004ED302F5FC6209CE5AC45CAF82E /* Pods-Shoppping-cart */,
-				4B1A7042BAD53241DE1677187FD35FA5 /* Pods-Shoppping-cart-Shoppping-cartUITests */,
-				6E6D61EE8895D50700213EB3C33078FB /* Pods-Shoppping-cartTests */,
+				C0736B7C31FCB5AFF2551AC751A3CD2A /* Pods-Shopping-cart */,
+				ACDD12FC034D16CB29F8AF01D50A6FDF /* Pods-Shopping-cart-Shopping-cartUITests */,
+				3FB22E8BAB8050344E8FCE5FCA3C7F58 /* Pods-Shopping-cartTests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -185,86 +185,86 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5CA58EE7E4D50EC25A945A9192579E5B /* Headers */ = {
+		3829CB5F594058C5885F98B1CDB73052 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				508B86076C445BF763E0C907E58C9C8A /* Pods-Shoppping-cart-umbrella.h in Headers */,
+				81CA990B664785C5D3766FF64F42BB90 /* Pods-Shopping-cart-Shopping-cartUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		747108006006EF11210826200FF15923 /* Headers */ = {
+		8A350A1105C459E5F163C24547D3212C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD364BE629942E527DB264B155C55A8 /* Pods-Shoppping-cartTests-umbrella.h in Headers */,
+				3EDB828059CD7D74C651BBB84D0AA227 /* Pods-Shopping-cart-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6056B26A77899A400F09532359EC136 /* Headers */ = {
+		9D76667B936A999AFBD4ADBB3F888D74 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42E909A9BE891398362A8AA6694B8AD7 /* Pods-Shoppping-cart-Shoppping-cartUITests-umbrella.h in Headers */,
+				B5BE53A34FDB548B99A288CDBCE935EB /* Pods-Shopping-cartTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2A68ACD6FAC83D31378BF8A592CE0836 /* Pods-Shoppping-cart-Shoppping-cartUITests */ = {
+		05DE3A2A7AD3D1936F96B47FC29DFE75 /* Pods-Shopping-cart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA59507080F28E1D8440DF29F212607B /* Build configuration list for PBXNativeTarget "Pods-Shoppping-cart-Shoppping-cartUITests" */;
+			buildConfigurationList = 97EF6AF7561673746DC15C345F5F7908 /* Build configuration list for PBXNativeTarget "Pods-Shopping-cart" */;
 			buildPhases = (
-				A6056B26A77899A400F09532359EC136 /* Headers */,
-				74B710FD1BBDA3F8B51C36ADC23D5C09 /* Sources */,
-				3976C207414BD9698F4601A00785B8F4 /* Frameworks */,
-				FC16EEF1BD22AC65812C7C4ACFF18262 /* Resources */,
+				8A350A1105C459E5F163C24547D3212C /* Headers */,
+				C5456C2EE05CDAE50B1DC7AAE661C712 /* Sources */,
+				3164E1F5F270CEAD51091A08D4692327 /* Frameworks */,
+				4012BC8144D3DB4F69FD51E64E8477D2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Shoppping-cart-Shoppping-cartUITests";
-			productName = Pods_Shoppping_cart_Shoppping_cartUITests;
-			productReference = 3C494544C53AA825C27E487B804C4DBB /* Pods-Shoppping-cart-Shoppping-cartUITests */;
+			name = "Pods-Shopping-cart";
+			productName = Pods_Shopping_cart;
+			productReference = 06CAEC2016FFA3B340AC0E6D045333F8 /* Pods-Shopping-cart */;
 			productType = "com.apple.product-type.framework";
 		};
-		3BD8E68D676BC003AC7869B0FA27D774 /* Pods-Shoppping-cartTests */ = {
+		47D2B4514C3AD30F167E0FD9C6B4D39C /* Pods-Shopping-cart-Shopping-cartUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 863A05C0D1EACD017A3A5F70AA05776D /* Build configuration list for PBXNativeTarget "Pods-Shoppping-cartTests" */;
+			buildConfigurationList = 581754E40DC5CD0CFEB0B7B6F9F706BD /* Build configuration list for PBXNativeTarget "Pods-Shopping-cart-Shopping-cartUITests" */;
 			buildPhases = (
-				747108006006EF11210826200FF15923 /* Headers */,
-				103E100AE075D7AC0336BD449132ABEF /* Sources */,
-				BFB7EA2CF06D653B4EF5CB0D318B5C48 /* Frameworks */,
-				D6B62346238026743D16ED6E4C67EB54 /* Resources */,
+				3829CB5F594058C5885F98B1CDB73052 /* Headers */,
+				527FB3E18D02B98AE6B251697018DC68 /* Sources */,
+				1927A9E998BC74C72F89EEFA48CD6827 /* Frameworks */,
+				85D0DB01483BFAC937BA9D2BE6FE9DCE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5C28CC76363442466F2963F980FD244E /* PBXTargetDependency */,
 			);
-			name = "Pods-Shoppping-cartTests";
-			productName = Pods_Shoppping_cartTests;
-			productReference = F6D68278282F2F5AEC17F9C5AB3C5B39 /* Pods-Shoppping-cartTests */;
+			name = "Pods-Shopping-cart-Shopping-cartUITests";
+			productName = Pods_Shopping_cart_Shopping_cartUITests;
+			productReference = 8852CEE255D4C447470A0CCF97298A75 /* Pods-Shopping-cart-Shopping-cartUITests */;
 			productType = "com.apple.product-type.framework";
 		};
-		60FFD94BE8498EEE9D8DA2F5FC32D355 /* Pods-Shoppping-cart */ = {
+		8590A1DCCECB9E6589C77A02AD60F06E /* Pods-Shopping-cartTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03D58CAE26DCE416FEFAF63FA0035926 /* Build configuration list for PBXNativeTarget "Pods-Shoppping-cart" */;
+			buildConfigurationList = 16144AC6846388E7AFA6D89BE98E5F92 /* Build configuration list for PBXNativeTarget "Pods-Shopping-cartTests" */;
 			buildPhases = (
-				5CA58EE7E4D50EC25A945A9192579E5B /* Headers */,
-				A43B25DECCF0F12BC5DDF8426FD7AF24 /* Sources */,
-				AC57BF0C55F694C526685CE7E1CB36D8 /* Frameworks */,
-				D299078490B70FC1953629E9EA3AE156 /* Resources */,
+				9D76667B936A999AFBD4ADBB3F888D74 /* Headers */,
+				FE85D6A359DDFB56272D6A317D45EB75 /* Sources */,
+				3F4B1B5AF5AA218133CB96192B83BCA1 /* Frameworks */,
+				6516B49F188AD84FE880F67DEE2ED821 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0C897D0A2FC78128209CCAE2E3B1DAE2 /* PBXTargetDependency */,
 			);
-			name = "Pods-Shoppping-cart";
-			productName = Pods_Shoppping_cart;
-			productReference = F503E6B9E4583B277CB8738B0E9B4D79 /* Pods-Shoppping-cart */;
+			name = "Pods-Shopping-cartTests";
+			productName = Pods_Shopping_cartTests;
+			productReference = EC590F6699E152509B05BA5A1CB9AFEC /* Pods-Shopping-cartTests */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -285,33 +285,33 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9E6FDF6C374C97605177DFA88FC272B0 /* Products */;
+			productRefGroup = B5A138FAE453A44714EC3F33A857FC95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60FFD94BE8498EEE9D8DA2F5FC32D355 /* Pods-Shoppping-cart */,
-				2A68ACD6FAC83D31378BF8A592CE0836 /* Pods-Shoppping-cart-Shoppping-cartUITests */,
-				3BD8E68D676BC003AC7869B0FA27D774 /* Pods-Shoppping-cartTests */,
+				05DE3A2A7AD3D1936F96B47FC29DFE75 /* Pods-Shopping-cart */,
+				47D2B4514C3AD30F167E0FD9C6B4D39C /* Pods-Shopping-cart-Shopping-cartUITests */,
+				8590A1DCCECB9E6589C77A02AD60F06E /* Pods-Shopping-cartTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D299078490B70FC1953629E9EA3AE156 /* Resources */ = {
+		4012BC8144D3DB4F69FD51E64E8477D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6B62346238026743D16ED6E4C67EB54 /* Resources */ = {
+		6516B49F188AD84FE880F67DEE2ED821 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC16EEF1BD22AC65812C7C4ACFF18262 /* Resources */ = {
+		85D0DB01483BFAC937BA9D2BE6FE9DCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,45 +321,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		103E100AE075D7AC0336BD449132ABEF /* Sources */ = {
+		527FB3E18D02B98AE6B251697018DC68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D97DF63E53CFD7F15755199F902101D /* Pods-Shoppping-cartTests-dummy.m in Sources */,
+				FEEE5EDB9541583BDB8187FF082A0934 /* Pods-Shopping-cart-Shopping-cartUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74B710FD1BBDA3F8B51C36ADC23D5C09 /* Sources */ = {
+		C5456C2EE05CDAE50B1DC7AAE661C712 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C647C06CE9144928E52F57589FBF7E /* Pods-Shoppping-cart-Shoppping-cartUITests-dummy.m in Sources */,
+				57865AD437EB58F91199CC60AB90A70C /* Pods-Shopping-cart-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A43B25DECCF0F12BC5DDF8426FD7AF24 /* Sources */ = {
+		FE85D6A359DDFB56272D6A317D45EB75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98D646A76B1189814538B0A0865BEF01 /* Pods-Shoppping-cart-dummy.m in Sources */,
+				FC01F822FE626CF95345730460D82E3E /* Pods-Shopping-cartTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5C28CC76363442466F2963F980FD244E /* PBXTargetDependency */ = {
+		0C897D0A2FC78128209CCAE2E3B1DAE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Shoppping-cart";
-			target = 60FFD94BE8498EEE9D8DA2F5FC32D355 /* Pods-Shoppping-cart */;
-			targetProxy = 8550840E07EAD1F9C709A04F154A4006 /* PBXContainerItemProxy */;
+			name = "Pods-Shopping-cart";
+			target = 05DE3A2A7AD3D1936F96B47FC29DFE75 /* Pods-Shopping-cart */;
+			targetProxy = F8077E5F035712168AE340DA4A566835 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06CE7CCCC418FC7E6BC84499894DBB10 /* Release */ = {
+		130ED1A91FD69FA252124997FC81B967 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C557999530422D999094FB98C3E8C09 /* Pods-Shoppping-cart-Shoppping-cartUITests.release.xcconfig */;
+			baseConfigurationReference = A85B129D22BB801FE05452D7E7A7C414 /* Pods-Shopping-cart.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -371,7 +371,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shoppping-cart-Shoppping-cartUITests/Pods-Shoppping-cart-Shoppping-cartUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shopping-cart/Pods-Shopping-cart-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -380,7 +380,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shoppping-cart-Shoppping-cartUITests/Pods-Shoppping-cart-Shoppping-cartUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Shopping-cart/Pods-Shopping-cart.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -461,9 +461,9 @@
 			};
 			name = Debug;
 		};
-		462A4D7182C1A63CF39227F6EFE77E48 /* Debug */ = {
+		590B31D1314F8FC0A112524E3CB4E102 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D21CA6ABE3188EAF3B6662185ABC7B5E /* Pods-Shoppping-cart.debug.xcconfig */;
+			baseConfigurationReference = F20B2361F82C737514E1447E7AA90E1F /* Pods-Shopping-cartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -475,7 +475,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shoppping-cart/Pods-Shoppping-cart-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shopping-cartTests/Pods-Shopping-cartTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,7 +484,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shoppping-cart/Pods-Shoppping-cart.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Shopping-cartTests/Pods-Shopping-cartTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -560,9 +560,9 @@
 			};
 			name = Release;
 		};
-		A0D53A46EC0F134680F673D4CF17DF5D /* Release */ = {
+		BFBDFB3525F29D9EB1EBFCB2C7C10424 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7B24D7FE042E18717DF76EF84D2E191 /* Pods-Shoppping-cartTests.release.xcconfig */;
+			baseConfigurationReference = 870E248936D1B476A9CE1EABAB36F2AF /* Pods-Shopping-cart-Shopping-cartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -574,7 +574,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shoppping-cartTests/Pods-Shoppping-cartTests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shopping-cart-Shopping-cartUITests/Pods-Shopping-cart-Shopping-cartUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -583,7 +583,81 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shoppping-cartTests/Pods-Shoppping-cartTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Shopping-cart-Shopping-cartUITests/Pods-Shopping-cart-Shopping-cartUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C8B8529E86F0D2A33031025C22539E7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA9C9CE436728293BDCAD3B4888C6C34 /* Pods-Shopping-cart.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shopping-cart/Pods-Shopping-cart-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Shopping-cart/Pods-Shopping-cart.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F33BEFDD7A7B71D33902853B0DEC80FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9638C42A6AF95D05BA01C2470B7A386 /* Pods-Shopping-cartTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shopping-cartTests/Pods-Shopping-cartTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Shopping-cartTests/Pods-Shopping-cartTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -598,9 +672,9 @@
 			};
 			name = Release;
 		};
-		B791A41E5DBEB2271C80E08178E70280 /* Debug */ = {
+		F6CE8C42C69844311BCCC68B0998C985 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADFB14B1DF021B23CD5A17A70D25E0FC /* Pods-Shoppping-cartTests.debug.xcconfig */;
+			baseConfigurationReference = FF5F3FC423EC9946DD57B4146FDE63A1 /* Pods-Shopping-cart-Shopping-cartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -612,7 +686,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shoppping-cartTests/Pods-Shoppping-cartTests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shopping-cart-Shopping-cartUITests/Pods-Shopping-cart-Shopping-cartUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -621,44 +695,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shoppping-cartTests/Pods-Shoppping-cartTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CEDE5495411B5D418A0A3E7FE7B766EF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BDEFAF390E6341E8A5D2BA2C124018D /* Pods-Shoppping-cart.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shoppping-cart/Pods-Shoppping-cart-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shoppping-cart/Pods-Shoppping-cart.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Shopping-cart-Shopping-cartUITests/Pods-Shopping-cart-Shopping-cartUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -672,52 +709,15 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		D566F63E1B933BFF3DCD3A95A0707D8C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 352CFD55E83480AC19526F0CD89D30B0 /* Pods-Shoppping-cart-Shoppping-cartUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shoppping-cart-Shoppping-cartUITests/Pods-Shoppping-cart-Shoppping-cartUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shoppping-cart-Shoppping-cartUITests/Pods-Shoppping-cart-Shoppping-cartUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03D58CAE26DCE416FEFAF63FA0035926 /* Build configuration list for PBXNativeTarget "Pods-Shoppping-cart" */ = {
+		16144AC6846388E7AFA6D89BE98E5F92 /* Build configuration list for PBXNativeTarget "Pods-Shopping-cartTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				462A4D7182C1A63CF39227F6EFE77E48 /* Debug */,
-				CEDE5495411B5D418A0A3E7FE7B766EF /* Release */,
+				590B31D1314F8FC0A112524E3CB4E102 /* Debug */,
+				F33BEFDD7A7B71D33902853B0DEC80FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -731,20 +731,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		863A05C0D1EACD017A3A5F70AA05776D /* Build configuration list for PBXNativeTarget "Pods-Shoppping-cartTests" */ = {
+		581754E40DC5CD0CFEB0B7B6F9F706BD /* Build configuration list for PBXNativeTarget "Pods-Shopping-cart-Shopping-cartUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B791A41E5DBEB2271C80E08178E70280 /* Debug */,
-				A0D53A46EC0F134680F673D4CF17DF5D /* Release */,
+				BFBDFB3525F29D9EB1EBFCB2C7C10424 /* Debug */,
+				F6CE8C42C69844311BCCC68B0998C985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA59507080F28E1D8440DF29F212607B /* Build configuration list for PBXNativeTarget "Pods-Shoppping-cart-Shoppping-cartUITests" */ = {
+		97EF6AF7561673746DC15C345F5F7908 /* Build configuration list for PBXNativeTarget "Pods-Shopping-cart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D566F63E1B933BFF3DCD3A95A0707D8C /* Debug */,
-				06CE7CCCC418FC7E6BC84499894DBB10 /* Release */,
+				C8B8529E86F0D2A33031025C22539E7D /* Debug */,
+				130ED1A91FD69FA252124997FC81B967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

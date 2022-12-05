@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Shoppping-cart
+//  Shopping-cart
 //
 //  Created by cai dongyu on 2022/12/5.
 //
