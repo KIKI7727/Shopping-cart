@@ -109,6 +109,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8A13A281293F325400267F38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8ADEC293293E01A300CAC6FF /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A13A282293F325A00267F38 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8A13A283293F326200267F38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8ADEC285293E01A300CAC6FF = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				8ADEC291293E01A300CAC6FF /* Shopping_cartApp.swift */,
-				8ADEC293293E01A300CAC6FF /* ContentView.swift */,
+				8A13A283293F326200267F38 /* Model */,
+				8A13A282293F325A00267F38 /* ViewModel */,
+				8A13A281293F325400267F38 /* View */,
 				8ADEC295293E01A500CAC6FF /* Assets.xcassets */,
 				8ADEC297293E01A500CAC6FF /* Preview Content */,
 			);
