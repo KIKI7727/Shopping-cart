@@ -9,9 +9,6 @@ jobs:
   test:
     name: Test
     runs-on: macos-latest
-    strategy:
-        matrix:
-          destination: ['platform=iOS Simulator,OS=16.1,name=iPhone 14 Pro Max']
 
     steps:
       - name: Checkout
