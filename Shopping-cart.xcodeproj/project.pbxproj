@@ -241,6 +241,7 @@
 					};
 					8ADEC29D293E01A500CAC6FF = {
 						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 8ADEC28D293E01A300CAC6FF;
 					};
 					8ADEC2A7293E01A500CAC6FF = {
 						CreatedOnToolsVersion = 14.1;
@@ -585,6 +586,7 @@
 			baseConfigurationReference = 5E582C9A53DDFC55EC8E4561 /* Pods-Shopping-cartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -595,6 +597,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopping-cart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shopping-cart";
 			};
 			name = Debug;
 		};
@@ -603,6 +606,7 @@
 			baseConfigurationReference = 2BA40977B6A1304E2778FA63 /* Pods-Shopping-cartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -613,6 +617,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopping-cart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shopping-cart";
 			};
 			name = Release;
 		};
