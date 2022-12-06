@@ -15,7 +15,6 @@ jobs:
         xcode-version: latest-stable
 
 
-    steps:
       - name: Checkout
         uses: actions/checkout@v3
       
