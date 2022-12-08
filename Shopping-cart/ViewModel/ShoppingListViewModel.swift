@@ -23,7 +23,16 @@ class ShoppingListViewModel: ObservableObject{
         self?.listContent = data
       })
       .store(in: &subscription)
+
+    self.getPromotions()
+      .sink(receiveCompletion: {_ in
+
+      }, receiveValue: {data in
+        print(data)
+      })
+      .store(in: &subscription)
   }
+
   func getShoppingList() -> AnyPublisher <Array<ShoppingList>, Error> {
     return URLSession.shared.dataTaskPublisher(for: URL(string: "https://tw-mobile-xian.github.io/pos-api/items.json")!)
       .map { $0.data }
@@ -33,5 +42,15 @@ class ShoppingListViewModel: ObservableObject{
       .compactMap{$0}
       .eraseToAnyPublisher()
   }
+
+  func getPromotions() -> AnyPublisher <Array<String>, Error> {
+    return URLSession.shared.dataTaskPublisher(for: URL(string: "https://tw-mobile-xian.github.io/pos-api/promotions.json")!)
+      .map { $0.data }
+      .tryMap {
+        try? JSONDecoder().decode([String].self, from: $0)
+      }
+      .compactMap{$0}
+      .eraseToAnyPublisher()
+    }
 }
 
