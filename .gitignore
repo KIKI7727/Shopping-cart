@@ -4,7 +4,7 @@ profile
 *.moved-aside
 
 #CocoaPods
-Pods/
+#Pods/
 !Podfile
 !Podfile.lock
 
