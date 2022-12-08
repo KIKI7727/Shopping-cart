@@ -1,6 +1,0 @@
-framework module Pods_Shopping_cart_Shopping_cartUITests {
-  umbrella header "Pods-Shopping-cart-Shopping-cartUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
