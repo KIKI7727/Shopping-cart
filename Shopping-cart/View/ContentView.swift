@@ -6,11 +6,25 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct ShoppingList: Codable {
-  let barcode: String
-  let name: String
-  let unit: String
-  let price: Double
+struct ContentView: View {
+  @State private var viewModel: ShoppingListViewModel = .init()
+
+  var body: some View {
+    VStack {
+      List(viewModel.listContent, id:\.barcode){shoppingInfo in
+        Text(shoppingInfo.name)
+        Text(shoppingInfo.barcode)
+        Text(String(shoppingInfo.price))
+      }
+    }
+    .padding()
+  }
 }
 
+struct ContentView_Previews: PreviewProvider {
+  static var previews: some View {
+    ContentView()
+  }
+}
