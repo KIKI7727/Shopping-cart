@@ -29,7 +29,7 @@ class ShoppingListViewModel: ObservableObject{
       })
       .store(in: &subscription)
 
-    let data:AnyPublisher<String, Error> = shoppingListServer.getDataFromRemote(url: promotionsUrl)
+    let data:AnyPublisher<[String], Error> = shoppingListServer.getDataFromRemote(url: promotionsUrl)
     data.sink(receiveCompletion: { completion in
       print(completion)
     }, receiveValue: { data in
