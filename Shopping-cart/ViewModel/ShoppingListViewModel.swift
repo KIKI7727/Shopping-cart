@@ -11,8 +11,6 @@ import Combine
 class ShoppingListViewModel: ObservableObject{
   @Published var listContent: [ShoppingList] = []
 
-  var cancellables = Set<AnyCancellable>()
-
   private var subscription: Set<AnyCancellable> = []
 
   let promotionsUrl = "https://tw-mobile-xian.github.io/pos-api/promotions.json"
@@ -21,7 +19,7 @@ class ShoppingListViewModel: ObservableObject{
   init() {
     let shoppingListServer = ShoppingListServer()
 
-    let shoppingdata:AnyPublisher<[ShoppingList], Error> = shoppingListServer.getDataFromRemote(url: shoppingListUrl)
+    let shoppingdata: AnyPublisher<[ShoppingList], Error> = shoppingListServer.getDataFromRemote(url: shoppingListUrl)
     shoppingdata.sink(receiveCompletion: { completion in
       print(completion)
     }, receiveValue: { [weak self] data in
@@ -29,7 +27,7 @@ class ShoppingListViewModel: ObservableObject{
     })
     .store(in: &subscription)
 
-    let data:AnyPublisher<[String], Error> = shoppingListServer.getDataFromRemote(url: promotionsUrl)
+    let data: AnyPublisher<[String], Error> = shoppingListServer.getDataFromRemote(url: promotionsUrl)
     data.sink(receiveCompletion: { completion in
       print(completion)
     }, receiveValue: { data in
