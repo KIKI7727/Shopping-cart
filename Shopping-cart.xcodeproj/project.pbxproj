@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		887F82893610B653481F8F6C /* Pods_Shopping_cart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938B373011050A0DCBA3E87B /* Pods_Shopping_cart.framework */; };
+		8A84A83A2952E3AA0013C7C9 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84A8392952E3AA0013C7C9 /* ShoppingList.swift */; };
+		8A84A83C2952E3E60013C7C9 /* ShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84A83B2952E3E60013C7C9 /* ShoppingListViewModel.swift */; };
 		8ADEC292293E01A300CAC6FF /* Shopping_cartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEC291293E01A300CAC6FF /* Shopping_cartApp.swift */; };
 		8ADEC294293E01A300CAC6FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEC293293E01A300CAC6FF /* ContentView.swift */; };
 		8ADEC296293E01A500CAC6FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADEC295293E01A500CAC6FF /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		34640275E6C1E8586F96EA28 /* Pods-Shopping-cart-Shopping-cartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopping-cart-Shopping-cartUITests.release.xcconfig"; path = "Target Support Files/Pods-Shopping-cart-Shopping-cartUITests/Pods-Shopping-cart-Shopping-cartUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5C04D3B1053BF9B1E60A1739 /* Pods-Shopping-cart-Shopping-cartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopping-cart-Shopping-cartUITests.debug.xcconfig"; path = "Target Support Files/Pods-Shopping-cart-Shopping-cartUITests/Pods-Shopping-cart-Shopping-cartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E582C9A53DDFC55EC8E4561 /* Pods-Shopping-cartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopping-cartTests.debug.xcconfig"; path = "Target Support Files/Pods-Shopping-cartTests/Pods-Shopping-cartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A84A8392952E3AA0013C7C9 /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		8A84A83B2952E3E60013C7C9 /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
 		8ADEC28E293E01A300CAC6FF /* Shopping-cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping-cart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADEC291293E01A300CAC6FF /* Shopping_cartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_cartApp.swift; sourceTree = "<group>"; };
 		8ADEC293293E01A300CAC6FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,18 +121,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8A13A282293F325A00267F38 /* ViewModel */ = {
+		8A84A8372952E3740013C7C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		8A13A283293F326200267F38 /* Model */ = {
-			isa = PBXGroup;
-			children = (
+				8A84A8392952E3AA0013C7C9 /* ShoppingList.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8A84A8382952E37C0013C7C9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A84A83B2952E3E60013C7C9 /* ShoppingListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8ADEC285293E01A300CAC6FF = {
@@ -157,8 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				8ADEC291293E01A300CAC6FF /* Shopping_cartApp.swift */,
-				8A13A283293F326200267F38 /* Model */,
-				8A13A282293F325A00267F38 /* ViewModel */,
+				8A84A8382952E37C0013C7C9 /* ViewModel */,
+				8A84A8372952E3740013C7C9 /* Model */,
 				8A13A281293F325400267F38 /* View */,
 				8ADEC295293E01A500CAC6FF /* Assets.xcassets */,
 				8ADEC297293E01A500CAC6FF /* Preview Content */,
@@ -268,7 +274,6 @@
 					};
 					8ADEC2A7293E01A500CAC6FF = {
 						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 8ADEC28D293E01A300CAC6FF;
 					};
 				};
 			};
@@ -393,6 +398,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ADEC294293E01A300CAC6FF /* ContentView.swift in Sources */,
+				8A84A83A2952E3AA0013C7C9 /* ShoppingList.swift in Sources */,
+				8A84A83C2952E3E60013C7C9 /* ShoppingListViewModel.swift in Sources */,
 				8ADEC292293E01A300CAC6FF /* Shopping_cartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +491,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-w";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -537,6 +545,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-w";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -568,6 +577,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.Shopping-cart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,6 +610,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.Shopping-cart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -616,6 +631,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.Shopping-cartTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -634,6 +652,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.Shopping-cartTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -651,10 +672,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.Shopping-cartUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Shopping-cart";
 			};
 			name = Debug;
 		};
@@ -669,10 +693,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.Shopping-cartUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Shopping-cart";
 			};
 			name = Release;
 		};
