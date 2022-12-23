@@ -21,13 +21,13 @@ class ShoppingListViewModel: ObservableObject{
   init() {
     let shoppingListServer = ShoppingListServer()
 
-    shoppingListServer.getDataFromRemote(url: shoppingListUrl)
-      .sink(receiveCompletion: { completion in
-        print(completion)
-      }, receiveValue: { [weak self] data in
-        self?.listContent = data
-      })
-      .store(in: &subscription)
+    let shoppingdata:AnyPublisher<[ShoppingList], Error> = shoppingListServer.getDataFromRemote(url: shoppingListUrl)
+    shoppingdata.sink(receiveCompletion: { completion in
+      print(completion)
+    }, receiveValue: { [weak self] data in
+      self?.listContent = data
+    })
+    .store(in: &subscription)
 
     let data:AnyPublisher<[String], Error> = shoppingListServer.getDataFromRemote(url: promotionsUrl)
     data.sink(receiveCompletion: { completion in
