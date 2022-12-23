@@ -13,7 +13,7 @@ struct ContentView: View {
 
   var body: some View {
     VStack {
-      List(viewModel.listContent, id:\.barcode){shoppingInfo in
+      List(viewModel.listContent, id: \.barcode){shoppingInfo in
         Text(shoppingInfo.name)
         Text(shoppingInfo.barcode)
         Text(String(shoppingInfo.price))

@@ -38,7 +38,7 @@ class ShoppingListViewModel: ObservableObject{
 }
 
 struct ShoppingListServer {
-  func getDataFromRemote<T: Decodable>(url:String) -> AnyPublisher <T, Error> {
+  func getDataFromRemote<T: Decodable>(url: String) -> AnyPublisher <T, Error> {
     return URLSession.shared.dataTaskPublisher(for: URL(string: url)!)
       .map { $0.data }
       .tryMap {
