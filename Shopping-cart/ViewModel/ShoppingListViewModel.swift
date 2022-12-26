@@ -21,26 +21,26 @@ class ShoppingListViewModel: ObservableObject{
   init() {
     let shoppingListServer = ShoppingListServer()
 
-    shoppingListServer.getDataFromRemote(url: shoppingListUrl)
-      .sink(receiveCompletion: { completion in
+    let shoppingdata: AnyPublisher<[ShoppingList], Error> = shoppingListServer.getDataFromRemote(url: shoppingListUrl)
+    shoppingdata.sink(receiveCompletion: { completion in
       print(completion)
     }, receiveValue: { [weak self] data in
       self?.listContent = data
     })
     .store(in: &subscription)
 
-    shoppingListServer.getDataFromRemote(url: promotionsUrl)
-    .sink(receiveCompletion: { completion in
+    let data: AnyPublisher<[String], Error> = shoppingListServer.getDataFromRemote(url: promotionsUrl)
+    data.sink(receiveCompletion: { completion in
       print(completion)
     }, receiveValue: { data in
-      self.promotiosList = data
       self.listContent.forEach({
-        if self.promotiosList.contains($0.barcode){
+        if data.contains($0.barcode){
           self.ListContents.append(shoppingItem(shoppingList: $0, isPromotions: "买二赠一"))
         } else {
           self.ListContents.append(shoppingItem(shoppingList: $0, isPromotions: "暂无活动"))
         }
       })
+      print(self.ListContents)
     })
     .store(in: &subscription)
   }
