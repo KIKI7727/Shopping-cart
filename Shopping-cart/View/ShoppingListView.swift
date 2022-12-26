@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ContentView: View {
+struct ShoppingListView: View {
   @State private var viewModel: ShoppingListViewModel = .init()
 
   var body: some View {
@@ -23,8 +23,8 @@ struct ContentView: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ShoppingListView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    ShoppingListView()
   }
 }
