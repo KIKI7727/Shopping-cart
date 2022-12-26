@@ -9,22 +9,22 @@ import Foundation
 import SwiftUI
 
 struct ShoppingListView: View {
-  @State private var viewModel: ShoppingListViewModel = .init()
+  @StateObject private var viewModel: ShoppingListViewModel = .init()
 
   var body: some View {
-    VStack {
-      List(viewModel.listContent, id: \.barcode){shoppingInfo in
-        Text(shoppingInfo.name)
-        Text(shoppingInfo.barcode)
-        Text(String(shoppingInfo.price))
-      }
+    NavigationView {
+      VStack(alignment: .leading) {
+        List(viewModel.ListContents, id:\.shoppingList){ shoppingInfo in
+          ShoppingListItemView(content: shoppingInfo.shoppingList, isPromotions: shoppingInfo.isPromotions)
+            .listRowSeparator(.hidden)
+        }.listStyle(.plain)
+      }.navigationBarTitle("商品列表", displayMode: .inline)
     }
-    .padding()
   }
-}
 
-struct ShoppingListView_Previews: PreviewProvider {
-  static var previews: some View {
-    ShoppingListView()
+  struct ShoppingListView_Previews: PreviewProvider {
+    static var previews: some View {
+      ShoppingListView()
+    }
   }
 }
