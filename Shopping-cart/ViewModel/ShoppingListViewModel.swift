@@ -10,6 +10,8 @@ import Combine
 
 class ShoppingListViewModel: ObservableObject{
   @Published var listContent: [ShoppingList] = []
+  @Published var promotiosList: [String] = []
+  @Published var ListContents: [shoppingItem] = []
 
   private var subscription: Set<AnyCancellable> = []
 
@@ -31,20 +33,32 @@ class ShoppingListViewModel: ObservableObject{
     data.sink(receiveCompletion: { completion in
       print(completion)
     }, receiveValue: { data in
-      print(data)
+      self.listContent.forEach({
+        if data.contains($0.barcode){
+          self.ListContents.append(shoppingItem(shoppingList: $0, isPromotions: "买二赠一"))
+        } else {
+          self.ListContents.append(shoppingItem(shoppingList: $0, isPromotions: "暂无活动"))
+        }
+      })
+      print(self.ListContents)
     })
     .store(in: &subscription)
   }
-}
 
-struct ShoppingListServer {
-  func getDataFromRemote<T: Decodable>(url: String) -> AnyPublisher <T, Error> {
-    return URLSession.shared.dataTaskPublisher(for: URL(string: url)!)
-      .map { $0.data }
-      .tryMap {
-        try JSONDecoder().decode(T.self, from: $0)
-      }
-      .compactMap{$0}
-      .eraseToAnyPublisher()
+  struct ShoppingListServer {
+    func getDataFromRemote<T: Decodable>(url: String) -> AnyPublisher <T, Error> {
+      return URLSession.shared.dataTaskPublisher(for: URL(string: url)!)
+        .map { $0.data }
+        .tryMap {
+          try JSONDecoder().decode(T.self, from: $0)
+        }
+        .compactMap{$0}
+        .eraseToAnyPublisher()
+    }
+  }
+
+  struct shoppingItem {
+    let shoppingList: ShoppingList
+    let isPromotions: String
   }
 }
