@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ShoppingList: Codable {
+struct ShoppingList: Codable, Hashable{
   let barcode: String
   let name: String
   let unit: String
