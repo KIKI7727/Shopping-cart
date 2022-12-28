@@ -24,7 +24,6 @@ class ShoppingListViewModel: ObservableObject{
   
   init() {
     $items
-      .receive(on: DispatchQueue.main)
       .sink {
         self.totalPrices = 0
         self.savePrices = 0
