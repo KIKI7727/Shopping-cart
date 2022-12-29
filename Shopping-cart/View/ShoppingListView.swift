@@ -9,16 +9,20 @@ import Foundation
 import SwiftUI
 
 struct ShoppingListView: View {
-  @StateObject private var viewModel: ShoppingListViewModel = .init()
-
+//  @StateObject private var viewModel: ShoppingListViewModel = .init()
+  @EnvironmentObject var viewModel: ShoppingListViewModel
   var body: some View {
     NavigationView {
       VStack(alignment: .leading) {
         List(viewModel.ListContents, id:\.shoppingList){ shoppingInfo in
           ShoppingListItemView(content: shoppingInfo.shoppingList, isPromotions: shoppingInfo.isPromotions)
+            .environmentObject(viewModel)
             .listRowSeparator(.hidden)
         }.listStyle(.plain)
       }.navigationBarTitle("商品列表", displayMode: .inline)
+        .onAppear {
+            viewModel.fetchData()
+        }
     }
   }
 

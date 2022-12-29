@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct HomeView: View {
+  @StateObject private var viewModel: ShoppingListViewModel = .init()
+
   @State private var selectionTab: HomeTab = .shoppinglist
 
   var body: some View {
     TabView(selection: $selectionTab){
       ShoppingListView()
+        .environmentObject(viewModel)
         .tabItem {
           Label("商品列表", systemImage: "list.bullet")
         }
         .tag(HomeTab.shoppinglist)
-      Text("购物车")
+      ShoppingCartView()
+        .environmentObject(viewModel)
         .tabItem {
           Label("购物车", systemImage: "cart")
         }

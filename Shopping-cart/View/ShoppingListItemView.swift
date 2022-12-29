@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ShoppingListItemView: View {
+  @EnvironmentObject var viewModel: ShoppingListViewModel
+  
   var content: ShoppingList
   var isPromotions: String
 
@@ -18,6 +20,7 @@ struct ShoppingListItemView: View {
           .font(.system(size: 18, weight: .bold, design:  .rounded))
         Spacer()
         Button(action: {
+          viewModel.addToCart(shoppingItem(shoppingList: content, isPromotions: isPromotions))
         }, label: {
           Image(systemName: "plus.circle")
         })
@@ -31,7 +34,10 @@ struct ShoppingListItemView: View {
       }
     }
     .padding(20)
-    .background(.white)
+    .background(
+      RoundedRectangle(cornerRadius: 10)
+        .fill(.gray.opacity(0.2))
+    )
     .cornerRadius(15)
     .shadow(color: Color(UIColor.black.withAlphaComponent(0.06)), radius: 15, x: 0, y: 3)
   }
