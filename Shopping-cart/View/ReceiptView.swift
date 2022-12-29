@@ -37,22 +37,22 @@ struct ReceiptView: View {
       }
       .padding()
       .frame(maxWidth: 350, maxHeight: 500)
-       .background(
+      .background(
         RoundedRectangle(cornerRadius: 10)
           .fill(.gray.opacity(0.2))
       )
     }
   }
-
+  
   func ReceiptItemView(item: CartItem) -> some View {
     HStack(spacing: 5) {
       Text("名称: \(item.shoppingList.name), 数量: \(item.count), 价格：\(item.totalPrice(), specifier: "%.2f")")
-        }
+    }
     .padding(.vertical, 5)
   }
-    struct ReceiptView_Previews: PreviewProvider {
-      static var previews: some View {
-        ReceiptView()
-      }
+  struct ReceiptView_Previews: PreviewProvider {
+    static var previews: some View {
+      ReceiptView()
     }
   }
+}

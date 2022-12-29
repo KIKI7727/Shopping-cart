@@ -17,7 +17,7 @@ class ShoppingListViewModel: ObservableObject{
   @Published var savePrices: Float = 0.0
   @Published var originPrices: Float = 0.0
   @Published var isPayReady = true
-
+  
   private var subscription: Set<AnyCancellable> = []
   
   let promotionsUrl = "https://tw-mobile-xian.github.io/pos-api/promotions.json"
@@ -33,7 +33,7 @@ class ShoppingListViewModel: ObservableObject{
           self.savePrices += item.savePrice()
         }
         self.originPrices = self.totalPrices + self.savePrices
-
+        
         self.isPayReady = $0.isEmpty
       }
       .store(in: &subscription)

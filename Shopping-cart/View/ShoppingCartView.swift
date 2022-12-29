@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ShoppingCartView: View {
   @EnvironmentObject var viewModel: ShoppingListViewModel
-  
 
   var body: some View {
     NavigationView {
@@ -48,12 +47,10 @@ struct ShoppingCartView: View {
               RoundedRectangle(cornerRadius: 12)
                 .fill( viewModel.isPayReady ? .green.opacity(0.3) : .green)
                 .frame(width: UIScreen.main.bounds.width - 50)
-
             )
             .padding(.top, 10)
         }
         .disabled(viewModel.isPayReady)
-
       }
       .frame(width: UIScreen.main.bounds.width - 50)
       .navigationBarTitle("购物车", displayMode: .inline)
@@ -78,7 +75,6 @@ struct ShoppingCartView: View {
             .onTapGesture {
               viewModel.increaseItem(item)
             }
-
         }
       }
     }
@@ -89,7 +85,6 @@ struct ShoppingCartView: View {
     )
     .padding(.vertical, 5)
   }
-
 }
 
 

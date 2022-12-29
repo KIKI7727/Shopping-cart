@@ -12,7 +12,7 @@ struct ShoppingListItemView: View {
   
   var content: ShoppingList
   var isPromotions: String
-
+  
   var body: some View {
     VStack(alignment: .leading) {
       HStack {
