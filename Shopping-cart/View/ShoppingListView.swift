@@ -19,9 +19,6 @@ struct ShoppingListView: View {
             .listRowSeparator(.hidden)
         }.listStyle(.plain)
       }.navigationBarTitle("商品列表", displayMode: .inline)
-        .onAppear {
-          viewModel.fetchData()
-        }
     }
   }
 
