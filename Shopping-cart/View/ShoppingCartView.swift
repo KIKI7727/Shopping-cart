@@ -37,9 +37,7 @@ struct ShoppingCartView: View {
           Text("¥ \(viewModel.totalPrices, specifier: "%.2f")")
         }
 
-        Button {
-
-        } label: {
+        NavigationLink(destination: ReceiptView()) {
           Text("立即付款")
             .font(.system(size: 20, weight: .bold, design:  .rounded))
             .foregroundColor(.white)
@@ -47,12 +45,12 @@ struct ShoppingCartView: View {
             .padding(.vertical, 8)
             .background (
               RoundedRectangle(cornerRadius: 12)
-                .fill(.green)
+                .fill( viewModel.isPayReady ? .green.opacity(0.3) : .green)
                 .frame(width: UIScreen.main.bounds.width - 50)
-
             )
+            .padding(.top, 10)
         }
-        .padding(.top, 10)
+        .disabled(viewModel.isPayReady)
       }
       .frame(width: UIScreen.main.bounds.width - 50)
       .navigationBarTitle("购物车", displayMode: .inline)
@@ -77,7 +75,6 @@ struct ShoppingCartView: View {
             .onTapGesture {
               viewModel.increaseItem(item)
             }
-
         }
       }
     }
@@ -88,7 +85,6 @@ struct ShoppingCartView: View {
     )
     .padding(.vertical, 5)
   }
-
 }
 
 

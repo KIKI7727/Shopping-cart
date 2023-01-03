@@ -15,37 +15,37 @@ struct ShoppingList: Codable, Hashable{
 }
 
 struct shoppingItem {
-    let shoppingList: ShoppingList
-    let isPromotions: String
+  let shoppingList: ShoppingList
+  let isPromotions: String
 }
 
 struct CartItem {
-    let shoppingList: ShoppingList
-    let isPromotions: String
-    var count: Int
-
-    init(_ shoppingList: ShoppingList, promotion: String) {
-        self.count = 1
-        self.isPromotions = promotion
-        self.shoppingList = shoppingList
-    }
-
-    mutating func addCount() {
-        self.count += 1
-    }
-
-  func totalPrice()-> Float {
-      if isPromotions == "买二赠一" {
-          return count > 2 ? Float((count / 3) * 2 + count % 3) * Float(self.shoppingList.price)
-                           : Float(count) * Float(self.shoppingList.price)
-      }
-      return Float(count) * Float(self.shoppingList.price)
+  let shoppingList: ShoppingList
+  let isPromotions: String
+  var count: Int
+  
+  init(_ shoppingList: ShoppingList, promotion: String) {
+    self.count = 1
+    self.isPromotions = promotion
+    self.shoppingList = shoppingList
   }
-
+  
+  mutating func addCount() {
+    self.count += 1
+  }
+  
+  func totalPrice()-> Float {
+    if isPromotions == "买二赠一" {
+      return count > 2 ? Float((count / 3) * 2 + count % 3) * Float(self.shoppingList.price)
+      : Float(count) * Float(self.shoppingList.price)
+    }
+    return Float(count) * Float(self.shoppingList.price)
+  }
+  
   func savePrice()-> Float {
-      if isPromotions == "买二赠一" {
-          return Float(count > 2 ? Double(count / 3) * self.shoppingList.price : 0.0)
-      }
-      return 0.0
+    if isPromotions == "买二赠一" {
+      return Float(count > 2 ? Double(count / 3) * self.shoppingList.price : 0.0)
+    }
+    return 0.0
   }
 }

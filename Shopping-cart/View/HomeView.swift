@@ -9,9 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
   @StateObject private var viewModel: ShoppingListViewModel = .init()
-
+  
   @State private var selectionTab: HomeTab = .shoppinglist
-
+  
   var body: some View {
     TabView(selection: $selectionTab){
       ShoppingListView()
@@ -35,7 +35,7 @@ enum HomeTab {
 }
 
 struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
+  static var previews: some View {
+    HomeView()
+  }
 }

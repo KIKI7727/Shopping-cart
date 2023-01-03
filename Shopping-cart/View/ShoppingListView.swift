@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 struct ShoppingListView: View {
-//  @StateObject private var viewModel: ShoppingListViewModel = .init()
   @EnvironmentObject var viewModel: ShoppingListViewModel
   var body: some View {
     NavigationView {
@@ -20,9 +19,6 @@ struct ShoppingListView: View {
             .listRowSeparator(.hidden)
         }.listStyle(.plain)
       }.navigationBarTitle("商品列表", displayMode: .inline)
-        .onAppear {
-            viewModel.fetchData()
-        }
     }
   }
 

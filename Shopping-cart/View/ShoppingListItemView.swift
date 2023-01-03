@@ -12,7 +12,7 @@ struct ShoppingListItemView: View {
   
   var content: ShoppingList
   var isPromotions: String
-
+  
   var body: some View {
     VStack(alignment: .leading) {
       HStack {
@@ -24,6 +24,7 @@ struct ShoppingListItemView: View {
         }, label: {
           Image(systemName: "plus.circle")
         })
+        .buttonStyle(BorderlessButtonStyle())
       }
       Text("条形码：\(content.barcode)")
       Text("价格：\(String(content.price))")
@@ -34,10 +35,11 @@ struct ShoppingListItemView: View {
       }
     }
     .padding(20)
-    .background(
-      RoundedRectangle(cornerRadius: 10)
-        .fill(.gray.opacity(0.2))
-    )
+//    .background(
+//      RoundedRectangle(cornerRadius: 10)
+//        .fill(.gray.opacity(0.2))
+//    )
+    .background(.gray.opacity(0.2))
     .cornerRadius(15)
     .shadow(color: Color(UIColor.black.withAlphaComponent(0.06)), radius: 15, x: 0, y: 3)
   }

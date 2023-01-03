@@ -16,13 +16,16 @@ class ShoppingListViewModel: ObservableObject{
   @Published var totalPrices: Float = 0.0
   @Published var savePrices: Float = 0.0
   @Published var originPrices: Float = 0.0
-
+  @Published var isPayReady = true
+  
   private var subscription: Set<AnyCancellable> = []
   
   let promotionsUrl = "https://tw-mobile-xian.github.io/pos-api/promotions.json"
   let shoppingListUrl = "https://tw-mobile-xian.github.io/pos-api/items.json"
   
   init() {
+
+    fetchData()
     $items
       .sink {
         self.totalPrices = 0
@@ -32,6 +35,8 @@ class ShoppingListViewModel: ObservableObject{
           self.savePrices += item.savePrice()
         }
         self.originPrices = self.totalPrices + self.savePrices
+        
+        self.isPayReady = $0.isEmpty
       }
       .store(in: &subscription)
   }
@@ -50,17 +55,24 @@ class ShoppingListViewModel: ObservableObject{
     let data: AnyPublisher<[String], Error> = shoppingListServer.getDataFromRemote(url: promotionsUrl)
     data.sink(receiveCompletion: { completion in
       print(completion)
-    }, receiveValue: { data in
-      self.listContent.forEach({
-        if data.contains($0.barcode){
-          self.ListContents.append(shoppingItem(shoppingList: $0, isPromotions: "买二赠一"))
-        } else {
-          self.ListContents.append(shoppingItem(shoppingList: $0, isPromotions: "暂无活动"))
-        }
-      })
-      print(self.ListContents)
+    }, receiveValue: { [weak self] data in
+      self?.promotiosList = data
     })
     .store(in: &subscription)
+
+    $promotiosList
+      .sink { value in
+        self.ListContents.removeAll()
+        self.listContent.forEach({
+          if value.contains($0.barcode){
+            self.ListContents.append(shoppingItem(shoppingList: $0, isPromotions: "买二赠一"))
+          } else {
+            self.ListContents.append(shoppingItem(shoppingList: $0, isPromotions: "暂无活动"))
+          }
+        })
+        print(self.ListContents.count)
+      }
+      .store(in: &subscription)
   }
   
   struct ShoppingListServer {
