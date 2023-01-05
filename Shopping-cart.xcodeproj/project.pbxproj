@@ -60,8 +60,6 @@
 		8ADEC295293E01A500CAC6FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ADEC298293E01A500CAC6FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8ADEC29E293E01A500CAC6FF /* Shopping-cartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shopping-cartTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8ADEC2AC293E01A500CAC6FF /* Shopping_cartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_cartUITests.swift; sourceTree = "<group>"; };
-		8ADEC2AE293E01A500CAC6FF /* Shopping_cartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_cartUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		91D84E8C953F1D972B9A2B4A /* Pods-Shopping-cart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopping-cart.release.xcconfig"; path = "Target Support Files/Pods-Shopping-cart/Pods-Shopping-cart.release.xcconfig"; sourceTree = "<group>"; };
 		938B373011050A0DCBA3E87B /* Pods_Shopping_cart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shopping_cart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5B4548FFDA186139F6BC9B /* Pods_Shopping_cartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shopping_cartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +149,6 @@
 			children = (
 				8ADEC290293E01A300CAC6FF /* Shopping-cart */,
 				8ADEC2A1293E01A500CAC6FF /* Shopping-cartTests */,
-				8ADEC2AB293E01A500CAC6FF /* Shopping-cartUITests */,
 				8ADEC28F293E01A300CAC6FF /* Products */,
 				5F8C858F238AAC47B0DA5E01 /* Pods */,
 				2E30103C7E5455CA9E37497B /* Frameworks */,
@@ -198,15 +195,6 @@
 				8A879571296436CF0092CD43 /* ShoppingListModelTests.swift */,
 			);
 			path = "Shopping-cartTests";
-			sourceTree = "<group>";
-		};
-		8ADEC2AB293E01A500CAC6FF /* Shopping-cartUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8ADEC2AC293E01A500CAC6FF /* Shopping_cartUITests.swift */,
-				8ADEC2AE293E01A500CAC6FF /* Shopping_cartUITestsLaunchTests.swift */,
-			);
-			path = "Shopping-cartUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
