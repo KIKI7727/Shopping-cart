@@ -17,7 +17,6 @@ final class ServiceTest: XCTestCase {
 
     
   func test_getDataFromRemote_GetShopList_Success()  {
-
     service.getDataFromRemote(url: "https://tw-mobile-xian.github.io/pos-api/items.json")
       .sink { completion in
         switch completion {
@@ -38,8 +37,7 @@ final class ServiceTest: XCTestCase {
       .store(in: &cancellables)
   }
 
-/*  func test_getDataFromRemote_GetShopList_Failed() {
-  //  service.fetchResult = false
+  func test_getDataFromRemote_GetShopList_Failed() {
     service.getDataFromRemote(url: "https://tw-mobile-xian.github.io/pos-api/items.json11")
       .sink { completion in
         switch completion {
@@ -52,6 +50,6 @@ final class ServiceTest: XCTestCase {
         XCTFail("Should not be here.")
       }
           .store(in: &cancellables)
-  }*/
+  }
 
 }
