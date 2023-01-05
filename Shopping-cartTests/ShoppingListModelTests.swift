@@ -19,5 +19,14 @@ final class ShoppingListModelTests: XCTestCase {
     XCTAssertEqual(price, 4.00)
   }
 
+  func test_SavePrices() {
+    var item = CartItem(ShoppingList(barcode: "ITEM00000", name: "name1", unit: "uuit1", price: 2.00), promotion: "买二赠一")
+    item.addCount()
+    item.addCount()
+    item.addCount()
+    let price = item.savePrice()
+    XCTAssertEqual(price, 2.00)
+
+  }
 
 }

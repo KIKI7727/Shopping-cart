@@ -5,22 +5,22 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.00036">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000327">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: cd /Users/dongyu.cai/Documents/练习/Shopping-cart &amp;&amp; rm -rf ./coverage_report" time="0.030348">
+      <testcase classname="fastlane.lanes" name="1: cd /Users/dongyu.cai/Documents/练习/Shopping-cart &amp;&amp; rm -rf ./coverage_report" time="0.03353">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: xcodebuild" time="31.241902">
+      <testcase classname="fastlane.lanes" name="2: xcodebuild" time="42.668237">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: xcov" time="17.111107">
+      <testcase classname="fastlane.lanes" name="3: xcov" time="24.392346">
         
       </testcase>
     
