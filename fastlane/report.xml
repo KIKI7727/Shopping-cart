@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.00036">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: cd /Users/dongyu.cai/Documents/练习/Shopping-cart &amp;&amp; rm -rf ./coverage_report" time="0.030348">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: xcodebuild" time="31.241902">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: xcov" time="17.111107">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

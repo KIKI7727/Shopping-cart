@@ -14,26 +14,20 @@
 		8A4CB90A295D4059004ADA46 /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CB909295D4059004ADA46 /* ReceiptView.swift */; };
 		8A84A83A2952E3AA0013C7C9 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84A8392952E3AA0013C7C9 /* ShoppingList.swift */; };
 		8A84A83C2952E3E60013C7C9 /* ShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84A83B2952E3E60013C7C9 /* ShoppingListViewModel.swift */; };
+		8A87956A296407950092CD43 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A879569296407950092CD43 /* Service.swift */; };
+		8A87956C296408940092CD43 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87956B296408940092CD43 /* ServiceTests.swift */; };
+		8A87956E296408C80092CD43 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87956D296408C80092CD43 /* MockService.swift */; };
+		8A87957029640E450092CD43 /* ShoppingListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87956F29640E450092CD43 /* ShoppingListViewModelTests.swift */; };
+		8A879572296436CF0092CD43 /* ShoppingListModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A879571296436CF0092CD43 /* ShoppingListModelTests.swift */; };
 		8ADEC292293E01A300CAC6FF /* Shopping_cartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEC291293E01A300CAC6FF /* Shopping_cartApp.swift */; };
 		8ADEC294293E01A300CAC6FF /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEC293293E01A300CAC6FF /* ShoppingListView.swift */; };
 		8ADEC296293E01A500CAC6FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADEC295293E01A500CAC6FF /* Assets.xcassets */; };
 		8ADEC299293E01A500CAC6FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADEC298293E01A500CAC6FF /* Preview Assets.xcassets */; };
-		8ADEC2A3293E01A500CAC6FF /* Shopping_cartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEC2A2293E01A500CAC6FF /* Shopping_cartTests.swift */; };
-		8ADEC2AD293E01A500CAC6FF /* Shopping_cartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEC2AC293E01A500CAC6FF /* Shopping_cartUITests.swift */; };
-		8ADEC2AF293E01A500CAC6FF /* Shopping_cartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEC2AE293E01A500CAC6FF /* Shopping_cartUITestsLaunchTests.swift */; };
-		96035252337D9B66CEA99933 /* Pods_Shopping_cart_Shopping_cartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2724A4A3102236D998C4484D /* Pods_Shopping_cart_Shopping_cartUITests.framework */; };
 		D5CF78A0D9AD0EA478B959AB /* Pods_Shopping_cartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5B4548FFDA186139F6BC9B /* Pods_Shopping_cartTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8ADEC29F293E01A500CAC6FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8ADEC286293E01A300CAC6FF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8ADEC28D293E01A300CAC6FF;
-			remoteInfo = "Shopping-cart";
-		};
-		8ADEC2A9293E01A500CAC6FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8ADEC286293E01A300CAC6FF /* Project object */;
 			proxyType = 1;
@@ -55,14 +49,17 @@
 		8A4CB909295D4059004ADA46 /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
 		8A84A8392952E3AA0013C7C9 /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
 		8A84A83B2952E3E60013C7C9 /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
+		8A879569296407950092CD43 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		8A87956B296408940092CD43 /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		8A87956D296408C80092CD43 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		8A87956F29640E450092CD43 /* ShoppingListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModelTests.swift; sourceTree = "<group>"; };
+		8A879571296436CF0092CD43 /* ShoppingListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListModelTests.swift; sourceTree = "<group>"; };
 		8ADEC28E293E01A300CAC6FF /* Shopping-cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping-cart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADEC291293E01A300CAC6FF /* Shopping_cartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_cartApp.swift; sourceTree = "<group>"; };
 		8ADEC293293E01A300CAC6FF /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
 		8ADEC295293E01A500CAC6FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ADEC298293E01A500CAC6FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8ADEC29E293E01A500CAC6FF /* Shopping-cartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shopping-cartTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8ADEC2A2293E01A500CAC6FF /* Shopping_cartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_cartTests.swift; sourceTree = "<group>"; };
-		8ADEC2A8293E01A500CAC6FF /* Shopping-cartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shopping-cartUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADEC2AC293E01A500CAC6FF /* Shopping_cartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_cartUITests.swift; sourceTree = "<group>"; };
 		8ADEC2AE293E01A500CAC6FF /* Shopping_cartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_cartUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		91D84E8C953F1D972B9A2B4A /* Pods-Shopping-cart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopping-cart.release.xcconfig"; path = "Target Support Files/Pods-Shopping-cart/Pods-Shopping-cart.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,14 +81,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CF78A0D9AD0EA478B959AB /* Pods_Shopping_cartTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8ADEC2A5293E01A500CAC6FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96035252337D9B66CEA99933 /* Pods_Shopping_cart_Shopping_cartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +138,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		8A879568296407430092CD43 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8A879569296407950092CD43 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		8ADEC285293E01A300CAC6FF = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +163,6 @@
 			children = (
 				8ADEC28E293E01A300CAC6FF /* Shopping-cart.app */,
 				8ADEC29E293E01A500CAC6FF /* Shopping-cartTests.xctest */,
-				8ADEC2A8293E01A500CAC6FF /* Shopping-cartUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +170,7 @@
 		8ADEC290293E01A300CAC6FF /* Shopping-cart */ = {
 			isa = PBXGroup;
 			children = (
+				8A879568296407430092CD43 /* Service */,
 				8ADEC291293E01A300CAC6FF /* Shopping_cartApp.swift */,
 				8A84A8382952E37C0013C7C9 /* ViewModel */,
 				8A84A8372952E3740013C7C9 /* Model */,
@@ -195,7 +192,10 @@
 		8ADEC2A1293E01A500CAC6FF /* Shopping-cartTests */ = {
 			isa = PBXGroup;
 			children = (
-				8ADEC2A2293E01A500CAC6FF /* Shopping_cartTests.swift */,
+				8A87956B296408940092CD43 /* ServiceTests.swift */,
+				8A87956D296408C80092CD43 /* MockService.swift */,
+				8A87956F29640E450092CD43 /* ShoppingListViewModelTests.swift */,
+				8A879571296436CF0092CD43 /* ShoppingListModelTests.swift */,
 			);
 			path = "Shopping-cartTests";
 			sourceTree = "<group>";
@@ -249,25 +249,6 @@
 			productReference = 8ADEC29E293E01A500CAC6FF /* Shopping-cartTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8ADEC2A7293E01A500CAC6FF /* Shopping-cartUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8ADEC2B8293E01A500CAC6FF /* Build configuration list for PBXNativeTarget "Shopping-cartUITests" */;
-			buildPhases = (
-				75F8475BC2DDF14B63CE4A8D /* [CP] Check Pods Manifest.lock */,
-				8ADEC2A4293E01A500CAC6FF /* Sources */,
-				8ADEC2A5293E01A500CAC6FF /* Frameworks */,
-				8ADEC2A6293E01A500CAC6FF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8ADEC2AA293E01A500CAC6FF /* PBXTargetDependency */,
-			);
-			name = "Shopping-cartUITests";
-			productName = "Shopping-cartUITests";
-			productReference = 8ADEC2A8293E01A500CAC6FF /* Shopping-cartUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -283,9 +264,7 @@
 					};
 					8ADEC29D293E01A500CAC6FF = {
 						CreatedOnToolsVersion = 14.1;
-					};
-					8ADEC2A7293E01A500CAC6FF = {
-						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 8ADEC28D293E01A300CAC6FF;
 					};
 				};
 			};
@@ -304,7 +283,6 @@
 			targets = (
 				8ADEC28D293E01A300CAC6FF /* Shopping-cart */,
 				8ADEC29D293E01A500CAC6FF /* Shopping-cartTests */,
-				8ADEC2A7293E01A500CAC6FF /* Shopping-cartUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -320,13 +298,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8ADEC29C293E01A500CAC6FF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8ADEC2A6293E01A500CAC6FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,28 +323,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Shopping-cart-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75F8475BC2DDF14B63CE4A8D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Shopping-cart-Shopping-cartUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -414,6 +363,7 @@
 				8A84A83A2952E3AA0013C7C9 /* ShoppingList.swift in Sources */,
 				8A4CB90A295D4059004ADA46 /* ReceiptView.swift in Sources */,
 				8A84A83C2952E3E60013C7C9 /* ShoppingListViewModel.swift in Sources */,
+				8A87956A296407950092CD43 /* Service.swift in Sources */,
 				8A4CB906295ADD1F004ADA46 /* ShoppingCartView.swift in Sources */,
 				8A4CB90229597BD1004ADA46 /* HomeView.swift in Sources */,
 				8ADEC292293E01A300CAC6FF /* Shopping_cartApp.swift in Sources */,
@@ -424,16 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ADEC2A3293E01A500CAC6FF /* Shopping_cartTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8ADEC2A4293E01A500CAC6FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8ADEC2AF293E01A500CAC6FF /* Shopping_cartUITestsLaunchTests.swift in Sources */,
-				8ADEC2AD293E01A500CAC6FF /* Shopping_cartUITests.swift in Sources */,
+				8A87956C296408940092CD43 /* ServiceTests.swift in Sources */,
+				8A87957029640E450092CD43 /* ShoppingListViewModelTests.swift in Sources */,
+				8A87956E296408C80092CD43 /* MockService.swift in Sources */,
+				8A879572296436CF0092CD43 /* ShoppingListModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,14 +389,126 @@
 			target = 8ADEC28D293E01A300CAC6FF /* Shopping-cart */;
 			targetProxy = 8ADEC29F293E01A500CAC6FF /* PBXContainerItemProxy */;
 		};
-		8ADEC2AA293E01A500CAC6FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8ADEC28D293E01A300CAC6FF /* Shopping-cart */;
-			targetProxy = 8ADEC2A9293E01A500CAC6FF /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8A879564296405CE0092CD43 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-w";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = TESTING;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Testing;
+		};
+		8A879565296405CE0092CD43 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2867C7C788FF250932A081CE /* Pods-Shopping-cart.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Shopping-cart/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.Shopping-cart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Testing;
+		};
+		8A879566296405CE0092CD43 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E582C9A53DDFC55EC8E4561 /* Pods-Shopping-cartTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.Shopping-cartTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopping-cart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shopping-cart";
+			};
+			name = Testing;
+		};
 		8ADEC2B0293E01A500CAC6FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -640,6 +696,7 @@
 			baseConfigurationReference = 5E582C9A53DDFC55EC8E4561 /* Pods-Shopping-cartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -653,6 +710,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopping-cart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shopping-cart";
 			};
 			name = Debug;
 		};
@@ -661,6 +719,7 @@
 			baseConfigurationReference = 2BA40977B6A1304E2778FA63 /* Pods-Shopping-cartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -674,48 +733,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		8ADEC2B9293E01A500CAC6FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C04D3B1053BF9B1E60A1739 /* Pods-Shopping-cart-Shopping-cartUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.Shopping-cartUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		8ADEC2BA293E01A500CAC6FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34640275E6C1E8586F96EA28 /* Pods-Shopping-cart-Shopping-cartUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.Shopping-cartUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopping-cart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shopping-cart";
 			};
 			name = Release;
 		};
@@ -726,6 +744,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ADEC2B0293E01A500CAC6FF /* Debug */,
+				8A879564296405CE0092CD43 /* Testing */,
 				8ADEC2B1293E01A500CAC6FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -735,6 +754,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ADEC2B3293E01A500CAC6FF /* Debug */,
+				8A879565296405CE0092CD43 /* Testing */,
 				8ADEC2B4293E01A500CAC6FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -744,16 +764,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ADEC2B6293E01A500CAC6FF /* Debug */,
+				8A879566296405CE0092CD43 /* Testing */,
 				8ADEC2B7293E01A500CAC6FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8ADEC2B8293E01A500CAC6FF /* Build configuration list for PBXNativeTarget "Shopping-cartUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8ADEC2B9293E01A500CAC6FF /* Debug */,
-				8ADEC2BA293E01A500CAC6FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+#if !TESTING
 struct ShoppingListView: View {
   @EnvironmentObject var viewModel: ShoppingListViewModel
   var body: some View {
@@ -28,3 +29,4 @@ struct ShoppingListView: View {
     }
   }
 }
+#endif

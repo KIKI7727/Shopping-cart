@@ -48,4 +48,11 @@ struct CartItem {
     }
     return 0.0
   }
-}
+
+  func outputContent()-> String {
+      if count > 0 {
+        return "名称：" + shoppingList.name + "，数量：\(count)" + shoppingList.unit + ",小计：\(totalPrice())(元)\n"
+      } else {
+          return ""
+      }
+  }}

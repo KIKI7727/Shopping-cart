@@ -17,32 +17,46 @@ class ShoppingListViewModel: ObservableObject{
   @Published var savePrices: Float = 0.0
   @Published var originPrices: Float = 0.0
   @Published var isPayReady = true
-  
+  @Published var outputContent = ""
   private var subscription: Set<AnyCancellable> = []
   
   let promotionsUrl = "https://tw-mobile-xian.github.io/pos-api/promotions.json"
   let shoppingListUrl = "https://tw-mobile-xian.github.io/pos-api/items.json"
-  
-  init() {
+
+  let shoppingListServer: ListServer
+
+  init(listServer: ListServer = ShoppingListServer()) {
+
+    self.shoppingListServer = listServer
 
     fetchData()
-    $items
-      .sink {
-        self.totalPrices = 0
-        self.savePrices = 0
-        for item in $0 {
-          self.totalPrices += item.totalPrice()
-          self.savePrices += item.savePrice()
-        }
-        self.originPrices = self.totalPrices + self.savePrices
-        
-        self.isPayReady = $0.isEmpty
+  }
+
+
+  func getOutput() {
+      outputContent.append("***<没钱赚商店>收据***\n")
+      for item in items {
+        outputContent += item.outputContent()
       }
-      .store(in: &subscription)
+    outputContent.append("----------------------\n")
+    outputContent.append("总计：" + String.localizedStringWithFormat("%.2f", totalPrices) + "(元)\n")
+    outputContent.append("节省：" + String.localizedStringWithFormat("%.2f", savePrices) + "(元)\n")
+    outputContent.append("**********************")
+  }
+
+  func calcPrices() {
+    self.totalPrices = 0
+    self.savePrices = 0
+    for item in self.items {
+      self.totalPrices += item.totalPrice()
+      self.savePrices += item.savePrice()
+    }
+    self.originPrices = self.totalPrices + self.savePrices
+
+    self.isPayReady = self.items.isEmpty
   }
   
   func fetchData() {
-    let shoppingListServer = ShoppingListServer()
     
     let shoppingdata: AnyPublisher<[ShoppingList], Error> = shoppingListServer.getDataFromRemote(url: shoppingListUrl)
     shoppingdata.sink(receiveCompletion: { completion in
@@ -74,19 +88,7 @@ class ShoppingListViewModel: ObservableObject{
       }
       .store(in: &subscription)
   }
-  
-  struct ShoppingListServer {
-    func getDataFromRemote<T: Decodable>(url: String) -> AnyPublisher <T, Error> {
-      return URLSession.shared.dataTaskPublisher(for: URL(string: url)!)
-        .map { $0.data }
-        .tryMap {
-          try JSONDecoder().decode(T.self, from: $0)
-        }
-        .compactMap{$0}
-        .eraseToAnyPublisher()
-    }
-  }
-  
+
   func addToCart(_ item: shoppingItem) {
     if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
       items[index].count += 1

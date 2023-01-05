@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if !TESTING
 struct ReceiptView: View {
   @EnvironmentObject var viewModel: ShoppingListViewModel
   
@@ -23,17 +24,7 @@ struct ReceiptView: View {
       }
       VStack(alignment: .leading) {
         Spacer()
-        Text("***********************************")
-        Text("收据")
-          .font(.title2)
-        ForEach(viewModel.items, id: \.shoppingList) { item in
-          ReceiptItemView(item: item)
-        }
-        Text("---------------------------------")
-        Text("总价：\(viewModel.totalPrices, specifier: "%.2f")")
-        Text("优惠：\(viewModel.savePrices, specifier: "%.2f")")
-        Spacer()
-        Text("***********************************")
+        Text(viewModel.outputContent)
         Spacer()
       }
       .padding()
@@ -42,6 +33,9 @@ struct ReceiptView: View {
         RoundedRectangle(cornerRadius: 10)
           .fill(.gray.opacity(0.2))
       )
+    }
+    .onAppear {
+      viewModel.getOutput()
     }
   }
 
@@ -57,3 +51,5 @@ struct ReceiptView: View {
     }
   }
 }
+
+#endif

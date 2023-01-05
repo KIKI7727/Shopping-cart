@@ -1,0 +1,43 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+
+default_platform(:ios)
+
+platform :ios do
+
+  desc "自动化测试"
+
+  lane :unittest do 
+    sh(%(cd #{ENV['PWD']} && rm -rf ./coverage_report))
+    UI.message("start  xcodebuild")
+    xcodebuild(
+      test: true,
+      scheme: "Shopping-cart",
+      workspace: "Shopping-cart.xcworkspace",
+      destination: "platform=iOS Simulator,name=iPhone 13,OS=15.2"
+    )
+    UI.message("success  xcodebuild")
+    
+    UI.message("start  xcov")
+    xcov(
+      workspace: "Shopping-cart.xcworkspace",
+      scheme: "Shopping-cart",
+      markdown_report: "true",
+      output_directory:"coverage_report"
+    )
+    UI.message("success  xcov")
+  end
+ end

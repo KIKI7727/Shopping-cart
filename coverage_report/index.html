@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--
+xcov - Xcode code coverage without hassle
+A tool developed by Carlos Vidal @carlostify
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>xcov - Code coverage report</title>
+  <link rel="stylesheet" media="screen" href="resources/bootstrap.min.css" />
+  <link rel="stylesheet" media="screen" href="resources/opensans.css" />
+  <link rel="stylesheet" media="all" href="resources/main.css" />
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script src="resources/jquery.min.js"></script>
+  <script src="resources/bootstrap.min.js"></script>
+  <script src="resources/main.js"></script>
+</head>
+<body>
+  <!-- NavBar template starts here -->
+  <nav class="navbar navbar-fixed-top navbar-inverse" style=" border-bottom-width: 0px;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 text-left">
+          <img class="logo" src="resources/xcov_logo.png"/>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- NavBar template ends here -->
+  <!-- Body template starts here -->
+  <div class="container-fluid container-body">
+    <!-- Coverage resume starts here -->
+    <div class="row coverage-summary">
+        <div class="col-md-12 text-center">
+          <div class="summary-counter">
+            64.88%
+          </div>
+          <div class="summary-description" style="color: #FF9C00;">
+            Almost unmaintainable
+          </div>
+        </div>
+    </div>
+    <!-- Coverage resume ends here -->
+        <!-- Target details start here -->
+    <div class="row target-details" target-id="422f24d1ba230dd2c995bc35abea9d5ef7da1133">
+      <!-- Target name -->
+      <div class="col-xs-9 col-md-offset-1 col-md-8 col-lg-offset-2 col-lg-6 target-name">
+        Shopping-cart.app
+      </div>
+      <div class="col-xs-3 col-md-2 col-lg-2 text-right target-percentage">
+        64.88% <span><div class="circle" style="background-color: #FF9C00;"></div></span>
+      </div>
+    </div>
+    <!-- Target files -->
+    <div class="files-wrapper" id="422f24d1ba230dd2c995bc35abea9d5ef7da1133" style="display: none;">
+    <div class="row target-files">
+      <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                <!-- Single file starts here -->
+        
+        <div class="row file-row" file-id="04a7ae6e6c8ac7b744785abf0803972d120c1288">
+        
+          <div class="col-xs-10 col-md-10 col-lg-10">
+            <span><img class="file-icon" src="resources/file_swift.png"/></span>
+            ShoppingList.swift
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            50.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <div class="functions-wrapper" id="04a7ae6e6c8ac7b744785abf0803972d120c1288" style="display: none;">
+                <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            CartItem.init(_:promotion:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            CartItem.addCount()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            CartItem.totalPrice()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            85.71% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            CartItem.savePrice()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            CartItem.outputContent()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+
+        </div>
+        <!-- Single file ends here -->
+        <!-- Single file starts here -->
+        
+        <div class="row file-row" file-id="9fbdd1355ad505a97867a0e31e66cb2c8a7429fd">
+        
+          <div class="col-xs-10 col-md-10 col-lg-10">
+            <span><img class="file-icon" src="resources/file_swift.png"/></span>
+            Service.swift
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            64.29% <span><div class="circle-sm" style="background-color: #FF9C00;"></div></span>
+          </div>
+        </div>
+        <div class="functions-wrapper" id="9fbdd1355ad505a97867a0e31e66cb2c8a7429fd" style="display: none;">
+                <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            ShoppingListServer.getDataFromRemote&lt;A&gt;(url:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #1 in ShoppingListServer.getDataFromRemote&lt;A&gt;(url:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #2 in ShoppingListServer.getDataFromRemote&lt;A&gt;(url:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #3 in ShoppingListServer.getDataFromRemote&lt;A&gt;(url:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+
+        </div>
+        <!-- Single file ends here -->
+        <!-- Single file starts here -->
+        
+        <div class="row file-row" file-id="82bad006d4568ee96dea8a9d2f7d8f74cfbb9c46">
+        
+          <div class="col-xs-10 col-md-10 col-lg-10">
+            <span><img class="file-icon" src="resources/file_swift.png"/></span>
+            ShoppingListViewModel.swift
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            66.10% <span><div class="circle-sm" style="background-color: #FCFF00;"></div></span>
+          </div>
+        </div>
+        <div class="functions-wrapper" id="82bad006d4568ee96dea8a9d2f7d8f74cfbb9c46" style="display: none;">
+                <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            variable initialization expression of ShoppingListViewModel._listContent
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            variable initialization expression of ShoppingListViewModel._promotiosList
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            variable initialization expression of ShoppingListViewModel._ListContents
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            variable initialization expression of ShoppingListViewModel._items
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            variable initialization expression of ShoppingListViewModel.subscription
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            ShoppingListViewModel.init(listServer:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            ShoppingListViewModel.getOutput()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            ShoppingListViewModel.calcPrices()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            ShoppingListViewModel.fetchData()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #1 in ShoppingListViewModel.fetchData()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #2 in ShoppingListViewModel.fetchData()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #3 in ShoppingListViewModel.fetchData()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #4 in ShoppingListViewModel.fetchData()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #5 in ShoppingListViewModel.fetchData()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #1 in closure #5 in ShoppingListViewModel.fetchData()
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            85.71% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            ShoppingListViewModel.addToCart(_:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            85.71% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #1 in ShoppingListViewModel.addToCart(_:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            ShoppingListViewModel.minusItem(_:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #1 in ShoppingListViewModel.minusItem(_:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            ShoppingListViewModel.increaseItem(_:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #1 in ShoppingListViewModel.increaseItem(_:)
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            0.00% <span><div class="circle-sm" style="background-color: #FF0000;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+
+        </div>
+        <!-- Single file ends here -->
+        <!-- Single file starts here -->
+        
+        <div class="row file-row" file-id="6a30c7fddd78c601548b54479f223d7b3f7bd69f">
+        
+          <div class="col-xs-10 col-md-10 col-lg-10">
+            <span><img class="file-icon" src="resources/file_swift.png"/></span>
+            Shopping_cartApp.swift
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <div class="functions-wrapper" id="6a30c7fddd78c601548b54479f223d7b3f7bd69f" style="display: none;">
+                <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            Shopping_cartApp.body.getter
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+        <!-- Single function starts here-->
+        <div class="row function-row">
+          <div class="col-xs-10 col-md-10 col-lg-10 function-name">
+            closure #1 in Shopping_cartApp.body.getter
+          </div>
+          <div class="col-xs-2 col-md-2 col-lg-2 text-right">
+            100.00% <span><div class="circle-sm" style="background-color: #1FCB32;"></div></span>
+          </div>
+        </div>
+        <!-- Single function ends here -->
+
+        </div>
+        <!-- Single file ends here -->
+
+      </div>
+      <!-- File row ends here -->
+    </div>
+    </div>
+    <!-- Target details end here -->
+
+    <!-- Footer starts here -->
+    <div class="row footer">
+      <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 text-center">
+        xcov - Xcode coverage reports without hassle - A tool developed by
+        <a href="https://github.com/nakiostudio" target="_blank">Carlos Vidal</a> -
+        <a href="https://twitter.com/carlostify" target="_blank">@carlostify</a>
+      </div>
+    </div>
+    <!-- Footer ends here -->
+  </div>
+  <!-- Body template ends here -->
+</body>
+</html>

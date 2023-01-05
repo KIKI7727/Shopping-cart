@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if !TESTING
 struct ShoppingCartView: View {
   @EnvironmentObject var viewModel: ShoppingListViewModel
 
@@ -93,3 +94,5 @@ struct ShoppingCartView_Previews: PreviewProvider {
     ShoppingCartView()
   }
 }
+
+#endif
