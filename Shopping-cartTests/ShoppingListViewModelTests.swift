@@ -11,7 +11,7 @@ import Combine
 
 final class ShoppingViewModelTests: XCTestCase {
 
-  var model: ShoppingListViewModel?
+  var model: ShoppingListViewModel!
   var serviceList = MockService()
   var cancellables = Set<AnyCancellable>()
 
@@ -20,12 +20,12 @@ final class ShoppingViewModelTests: XCTestCase {
   }
 
 
-  func test_addItemtoCart_Success() {
+  func test_GIVEN_items_WHEN_addItemtoCart_THEN_Success() {
     XCTAssertEqual(model!.items.count, 0)
 
     let list = ShoppingList(barcode: "ITEM00000", name: "name1", unit: "uuit1", price: 1.00)
     let item = shoppingItem(shoppingList: list, isPromotions: "name1")
-    model!.addToCart(item)
+    model.addToCart(item)
 
     XCTAssertEqual(model!.items.count, 1)
 
@@ -34,10 +34,59 @@ final class ShoppingViewModelTests: XCTestCase {
     
   }
 
+  func  test_GIVEN_items_WHEN_minusItem_THEN_Success() {
+    let list = ShoppingList(barcode: "ITEM00000", name: "name1", unit: "uuit1", price: 1.00)
+    let item1 = shoppingItem(shoppingList: list, isPromotions: "name1")
+    model.addToCart(item1)
+    model.addToCart(item1)
+    model.addToCart(item1)
+
+    XCTAssertEqual(model!.items[0].count, 3)
+
+    var item2 = CartItem(list, promotion: "name1")
+    item2.count = 3
+    model.minusItem(item2)
+
+    XCTAssertEqual(model!.items[0].count, 2)
+  }
+
+  func test_GIVEN_items_WHEN_increaseItem_THEN_Success() {
+    let list = ShoppingList(barcode: "ITEM00000", name: "name1", unit: "uuit1", price: 1.00)
+    let item1 = shoppingItem(shoppingList: list, isPromotions: "name1")
+    model.addToCart(item1)
+    model.addToCart(item1)
+    model.addToCart(item1)
+
+    XCTAssertEqual(model!.items[0].count, 3)
+
+    var item2 = CartItem(list, promotion: "name1")
+    item2.count = 3
+    model!.increaseItem(item2)
+
+    XCTAssertEqual(model!.items[0].count, 4)
+  }
+
+  
+  func test_GIVEN_items_WHEN_calculatePrices_THEN_returnPrices() {
+    var items = [
+      CartItem(ShoppingList(barcode: "00", name: "1", unit: "u", price: 1.00), promotion: "买二赠一"),
+      CartItem(ShoppingList(barcode: "01", name: "2", unit: "u", price: 2.00), promotion: "买二赠一"),
+      CartItem(ShoppingList(barcode: "02", name: "3", unit: "u", price: 3.00), promotion: "none"),
+    ]
+    items[0].count = 2
+    items[1].count = 3
+    items[2].count = 2
+    model.items = items
+
+    model.calculatePrices()
+
+    XCTAssertEqual(model!.totalPrices, 12.00)
+    XCTAssertEqual(model!.savePrices, 2.00)
+    XCTAssertEqual(model!.originPrices, 14.00)
+  }
+
   func test_fetchData_Success() {
-
     let promise = expectation(description: "fetch data")
-
     model!.fetchData()
 
     model!.$ListContents

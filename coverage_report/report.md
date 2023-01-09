@@ -1,9 +1,9 @@
-## Current coverage for Shopping-cart.app is `67.86%`
+## Current coverage for Shopping-cart.app is `89.08%`
 Files changed | - | - 
 --- | --- | ---
-Service.swift | `64.29%` | :warning:
-ShoppingListViewModel.swift | `66.10%` | :warning:
-ShoppingList.swift | `67.86%` | :warning:
+ShoppingList.swift | `75.00%` | :warning:
+ShoppingListViewModel.swift | `89.74%` | :white_check_mark:
+Service.swift | `100.00%` | :white_check_mark:
 Shopping_cartApp.swift | `100.00%` | :white_check_mark:
 
 ---

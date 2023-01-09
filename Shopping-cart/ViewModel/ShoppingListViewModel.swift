@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import CoreData
 
 class ShoppingListViewModel: ObservableObject{
   @Published var listContent: [ShoppingList] = []
@@ -19,9 +20,12 @@ class ShoppingListViewModel: ObservableObject{
   @Published var isPayReady = true
   @Published var outputContent = ""
   private var subscription: Set<AnyCancellable> = []
+
   
   let promotionsUrl = "https://tw-mobile-xian.github.io/pos-api/promotions.json"
   let shoppingListUrl = "https://tw-mobile-xian.github.io/pos-api/items.json"
+
+  let container: NSPersistentContainer
 
   let shoppingListServer: ListServer
 
@@ -29,7 +33,34 @@ class ShoppingListViewModel: ObservableObject{
 
     self.shoppingListServer = listServer
 
+    container = NSPersistentContainer(name: "CartData")
+    container.loadPersistentStores { (description, error) in
+      if let _ = error {
+        print("Load Core Data Error!")
+      }
+    }
     fetchData()
+  }
+
+  func saveContext() {
+    do {
+      try container.viewContext.save()
+    } catch {
+      let error = error as NSError
+      print(error.localizedDescription)
+    }
+  }
+
+  func addCartItem(_ item: CartItem) {
+
+  }
+
+  func updateCartItem(_ item: CartItem) {
+
+  }
+
+  func deleteCartItem(_ item: CartItem) {
+
   }
 
 
@@ -44,7 +75,7 @@ class ShoppingListViewModel: ObservableObject{
     outputContent.append("**********************")
   }
 
-  func calcPrices() {
+  func calculatePrices() {
     self.totalPrices = 0
     self.savePrices = 0
     for item in self.items {
@@ -57,7 +88,6 @@ class ShoppingListViewModel: ObservableObject{
   }
   
   func fetchData() {
-    
     let shoppingdata: AnyPublisher<[ShoppingList], Error> = shoppingListServer.getDataFromRemote(url: shoppingListUrl)
     shoppingdata.sink(receiveCompletion: { completion in
       print(completion)
@@ -93,7 +123,9 @@ class ShoppingListViewModel: ObservableObject{
     if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
       items[index].count += 1
     } else {
-      items.append(CartItem(item.shoppingList, promotion: item.isPromotions))
+      let cartItem = CartItem(item.shoppingList, promotion: item.isPromotions)
+      items.append(cartItem)
+      addCartItem(cartItem)
     }
   }
   
