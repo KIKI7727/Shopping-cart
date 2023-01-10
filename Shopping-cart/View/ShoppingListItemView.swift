@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-#if !TESTING
+
 struct ShoppingListItemView: View {
   @EnvironmentObject var viewModel: ShoppingListViewModel
   
@@ -36,10 +36,6 @@ struct ShoppingListItemView: View {
       }
     }
     .padding(20)
-//    .background(
-//      RoundedRectangle(cornerRadius: 10)
-//        .fill(.gray.opacity(0.2))
-//    )
     .background(.gray.opacity(0.2))
     .cornerRadius(15)
     .shadow(color: Color(UIColor.black.withAlphaComponent(0.06)), radius: 15, x: 0, y: 3)
@@ -53,4 +49,3 @@ struct ShoppingListItemView_Previews: PreviewProvider {
   }
 }
 
-#endif

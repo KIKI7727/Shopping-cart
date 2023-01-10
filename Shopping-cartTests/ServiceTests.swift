@@ -79,7 +79,7 @@ final class ServiceTests: XCTestCase {
 
     urlsessionStub.publisher.send(completion: .failure(URLError(.badServerResponse)))
 
-    let expectedError = URLError(.badServerResponse)
+    let _ = URLError(.badServerResponse)
     XCTAssertEqual(actualError as! URLError, URLError(.badServerResponse))
 
   }

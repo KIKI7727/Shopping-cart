@@ -21,6 +21,8 @@ class ShoppingListViewModel: ObservableObject{
   @Published var outputContent = ""
   private var subscription: Set<AnyCancellable> = []
 
+  @Published var itemsEntity: [CartItemsEntity] = []
+
   
   let promotionsUrl = "https://tw-mobile-xian.github.io/pos-api/promotions.json"
   let shoppingListUrl = "https://tw-mobile-xian.github.io/pos-api/items.json"
@@ -39,6 +41,8 @@ class ShoppingListViewModel: ObservableObject{
         print("Load Core Data Error!")
       }
     }
+
+    getCartItemsFromCoreData()
     fetchData()
   }
 
@@ -51,16 +55,59 @@ class ShoppingListViewModel: ObservableObject{
     }
   }
 
+  
   func addCartItem(_ item: CartItem) {
+    let entity = CartItemsEntity(context: container.viewContext)
+    entity.barcode = item.shoppingList.barcode
+    entity.name = item.shoppingList.name
+    entity.price = item.shoppingList.price
+    entity.unit = item.shoppingList.unit
+    entity.isPromotion = item.isPromotions
+    entity.count = Int16(item.count)
+    entity.timestamp = Date()
+    saveContext()
 
+    itemsEntity.append(entity)
   }
 
   func updateCartItem(_ item: CartItem) {
-
+    if let entity = itemsEntity.first(where: { $0.name == item.shoppingList.name }) {
+      entity.count = Int16(item.count)
+      saveContext()
+    }
   }
 
   func deleteCartItem(_ item: CartItem) {
+    if let entity = itemsEntity.first(where: { $0.name == item.shoppingList.name }) {
+      container.viewContext.delete(entity)
+      saveContext()
+    }
+  }
 
+  func clearCart() {
+    for item in itemsEntity {
+      container.viewContext.delete(item)
+      saveContext()
+    }
+  }
+
+
+  func getCartItemsFromCoreData() {
+    let request = NSFetchRequest<CartItemsEntity>(entityName: "CartItemsEntity")
+    request.sortDescriptors = [NSSortDescriptor(keyPath: \CartItemsEntity.timestamp, ascending: true)]
+
+    do {
+      itemsEntity = try container.viewContext.fetch(request)
+
+      for item in itemsEntity {
+        let shopList = ShoppingList(barcode: item.barcode!, name: item.name!, unit: item.unit!, price: item.price)
+        var cartItem = CartItem(shopList, promotion: item.isPromotion!)
+        cartItem.count = Int(item.count)
+        items.append(cartItem)
+      }
+    } catch {
+      print(error.localizedDescription)
+    }
   }
 
 
@@ -122,6 +169,7 @@ class ShoppingListViewModel: ObservableObject{
   func addToCart(_ item: shoppingItem) {
     if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
       items[index].count += 1
+      updateCartItem(items[index])
     } else {
       let cartItem = CartItem(item.shoppingList, promotion: item.isPromotions)
       items.append(cartItem)
@@ -133,7 +181,9 @@ class ShoppingListViewModel: ObservableObject{
     if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
       if item.count > 1 {
         items[index].count -= 1
+        updateCartItem(items[index])
       } else {
+        deleteCartItem(items[index])
         items.remove(at: index)
       }
     }
@@ -142,6 +192,7 @@ class ShoppingListViewModel: ObservableObject{
   func increaseItem(_ item: CartItem) {
     if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
       items[index].count += 1
+      updateCartItem(items[index])
     }
   }
 }

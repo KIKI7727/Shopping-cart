@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-#if !TESTING
 struct HomeView: View {
   @StateObject private var viewModel: ShoppingListViewModel = .init()
   
@@ -40,4 +39,4 @@ struct HomeView_Previews: PreviewProvider {
     HomeView()
   }
 }
-#endif
+

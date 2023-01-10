@@ -5,7 +5,7 @@
 //  Created by cai dongyu on 2022/12/21.
 //
 
-//改名 
+
 import Foundation
 
 struct ShoppingList: Codable, Hashable{

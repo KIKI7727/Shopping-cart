@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-#if !TESTING
+
 struct ReceiptView: View {
   @EnvironmentObject var viewModel: ShoppingListViewModel
   
@@ -52,4 +52,4 @@ struct ReceiptView: View {
   }
 }
 
-#endif
+
