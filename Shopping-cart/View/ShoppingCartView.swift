@@ -56,6 +56,9 @@ struct ShoppingCartView: View {
       .frame(width: UIScreen.main.bounds.width - 50)
       .navigationBarTitle("购物车", displayMode: .inline)
     }
+    .onAppear {
+        viewModel.calculatePrices()
+    }
   }
 
   func ItemView(item: CartItem) -> some View {
@@ -69,12 +72,14 @@ struct ShoppingCartView: View {
           Text("数量:")
           Image(systemName: "minus.square")
             .onTapGesture {
-              viewModel.minusItem(item)
+                viewModel.minusItem(item)
+                viewModel.calculatePrices()
             }
           Text("\(item.count)")
           Image(systemName: "plus.square")
             .onTapGesture {
-              viewModel.increaseItem(item)
+                viewModel.increaseItem(item)
+                viewModel.calculatePrices()
             }
         }
       }

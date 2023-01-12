@@ -21,7 +21,7 @@ class ShoppingListViewModel: ObservableObject{
   @Published var outputContent = ""
   private var subscription: Set<AnyCancellable> = []
 
-  @Published var itemsEntity: [CartItemsEntity] = []
+  @Published var itemsEntity: [CartItemEntity] = []
 
   
   let promotionsUrl = "https://tw-mobile-xian.github.io/pos-api/promotions.json"
@@ -55,18 +55,10 @@ class ShoppingListViewModel: ObservableObject{
     }
   }
 
-  
-  func addCartItem(_ item: CartItem) {
-    let entity = CartItemsEntity(context: container.viewContext)
-    entity.barcode = item.shoppingList.barcode
-    entity.name = item.shoppingList.name
-    entity.price = item.shoppingList.price
-    entity.unit = item.shoppingList.unit
-    entity.isPromotion = item.isPromotions
-    entity.count = Int16(item.count)
-    entity.timestamp = Date()
-    saveContext()
 
+  func addCartItem(_ item: CartItem) {
+      let entity = CartItemEntity(context: container.viewContext, item: item)
+    saveContext()
     itemsEntity.append(entity)
   }
 
@@ -93,8 +85,8 @@ class ShoppingListViewModel: ObservableObject{
 
 
   func getCartItemsFromCoreData() {
-    let request = NSFetchRequest<CartItemsEntity>(entityName: "CartItemsEntity")
-    request.sortDescriptors = [NSSortDescriptor(keyPath: \CartItemsEntity.timestamp, ascending: true)]
+    let request = NSFetchRequest<CartItemEntity>(entityName: "CartItemEntity")
+    request.sortDescriptors = [NSSortDescriptor(keyPath: \CartItemEntity.timestamp, ascending: true)]
 
     do {
       itemsEntity = try container.viewContext.fetch(request)
@@ -112,10 +104,10 @@ class ShoppingListViewModel: ObservableObject{
 
 
   func getOutput() {
-      outputContent.append("***<没钱赚商店>收据***\n")
-      for item in items {
-        outputContent += item.outputContent()
-      }
+    outputContent.append("***<没钱赚商店>收据***\n")
+    for item in items {
+      outputContent += item.outputContent()
+    }
     outputContent.append("----------------------\n")
     outputContent.append("总计：" + String.localizedStringWithFormat("%.2f", totalPrices) + "(元)\n")
     outputContent.append("节省：" + String.localizedStringWithFormat("%.2f", savePrices) + "(元)\n")
@@ -196,3 +188,18 @@ class ShoppingListViewModel: ObservableObject{
     }
   }
 }
+
+extension CartItemEntity {
+    convenience init(context: NSManagedObjectContext, item: CartItem) {
+        self.init(context: context)
+
+        self.barcode = item.shoppingList.barcode
+        self.name = item.shoppingList.name
+        self.price = item.shoppingList.price
+        self.unit = item.shoppingList.unit
+        self.isPromotion = item.isPromotions
+        self.count = Int16(item.count)
+        self.timestamp = Date()
+    }
+  }
+
