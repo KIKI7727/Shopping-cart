@@ -13,7 +13,11 @@ class ShoppingListViewModel: ObservableObject{
   @Published var listContent: [ShoppingList] = []
   @Published var promotiosList: [String] = []
   @Published var ListContents: [shoppingItem] = []
-  @Published var items: [CartItem] = []
+  @Published var items: [CartItem] = [] {
+    didSet {
+      self.calculatePrices()
+    }
+  }
   @Published var totalPrices: Float = 0.0
   @Published var savePrices: Float = 0.0
   @Published var originPrices: Float = 0.0
@@ -164,10 +168,12 @@ class ShoppingListViewModel: ObservableObject{
     if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
       items[index].count += 1
       updateCartItem(items[index])
+//      calculatePrices()
     } else {
       let cartItem = CartItem(item.shoppingList, promotion: item.isPromotions)
       items.append(cartItem)
       addCartItem(cartItem)
+//      calculatePrices()
     }
   }
   
@@ -176,10 +182,11 @@ class ShoppingListViewModel: ObservableObject{
       if item.count > 1 {
         items[index].count -= 1
         updateCartItem(items[index])
+//        calculatePrices()
       } else {
         deleteCartItem(items[index])
         items.remove(at: index)
-        calculatePrices()
+//        calculatePrices()
       }
     }
   }
@@ -188,7 +195,7 @@ class ShoppingListViewModel: ObservableObject{
     if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
       items[index].count += 1
       updateCartItem(items[index])
-      calculatePrices()
+//      calculatePrices()
     }
   }
 }
