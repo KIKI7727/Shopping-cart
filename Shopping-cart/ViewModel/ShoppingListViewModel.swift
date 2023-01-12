@@ -77,6 +77,7 @@ class ShoppingListViewModel: ObservableObject{
   }
 
   func clearCart() {
+    items.removeAll()
     for item in itemsEntity {
       container.viewContext.delete(item)
       saveContext()
@@ -104,6 +105,7 @@ class ShoppingListViewModel: ObservableObject{
 
 
   func getOutput() {
+    outputContent = ""
     outputContent.append("***<没钱赚商店>收据***\n")
     for item in items {
       outputContent += item.outputContent()
@@ -177,6 +179,7 @@ class ShoppingListViewModel: ObservableObject{
       } else {
         deleteCartItem(items[index])
         items.remove(at: index)
+        calculatePrices()
       }
     }
   }
@@ -185,6 +188,7 @@ class ShoppingListViewModel: ObservableObject{
     if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
       items[index].count += 1
       updateCartItem(items[index])
+      calculatePrices()
     }
   }
 }

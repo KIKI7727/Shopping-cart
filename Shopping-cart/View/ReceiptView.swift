@@ -36,6 +36,7 @@ struct ReceiptView: View {
     }
     .onAppear {
       viewModel.getOutput()
+      viewModel.clearCart()
     }
   }
 
