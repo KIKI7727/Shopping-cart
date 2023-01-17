@@ -7,7 +7,6 @@
 
 import Foundation
 import Combine
-import CoreData
 
 class ShoppingListViewModel: ObservableObject{
   @Published var listContent: [ShoppingList] = []
@@ -25,92 +24,72 @@ class ShoppingListViewModel: ObservableObject{
   @Published var outputContent = ""
   private var subscription: Set<AnyCancellable> = []
 
-  @Published var itemsEntity: [CartItemEntity] = []
-
-  
   let promotionsUrl = "https://tw-mobile-xian.github.io/pos-api/promotions.json"
   let shoppingListUrl = "https://tw-mobile-xian.github.io/pos-api/items.json"
 
-  let container: NSPersistentContainer
-
   let shoppingListServer: ListServer
+  var coredataManager: CoreDataProtocol
 
-  init(listServer: ListServer = ShoppingListServer()) {
-
+  init(listServer: ListServer = ShoppingListServer(), coredataManager: CoreDataProtocol = CoreDataManager()) {
     self.shoppingListServer = listServer
-
-    container = NSPersistentContainer(name: "CartData")
-    container.loadPersistentStores { (description, error) in
-      if let _ = error {
-        print("Load Core Data Error!")
-      }
-    }
-
+    self.coredataManager = coredataManager
     getCartItemsFromCoreData()
     fetchData()
   }
 
-  func saveContext() {
-    do {
-      try container.viewContext.save()
-    } catch {
-      let error = error as NSError
-      print(error.localizedDescription)
+  func addToCart(_ item: shoppingItem) {
+    if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
+      items[index].count += 1
+      coredataManager.update(items[index])
+    } else {
+      let cartItem = CartItem(item.shoppingList, promotion: item.isPromotions)
+      items.append(cartItem)
+      coredataManager.add(cartItem)
     }
   }
 
-
-  func addCartItem(_ item: CartItem) {
-      let entity = CartItemEntity(context: container.viewContext, item: item)
-    saveContext()
-    itemsEntity.append(entity)
-  }
-
-  func updateCartItem(_ item: CartItem) {
-    if let entity = itemsEntity.first(where: { $0.name == item.shoppingList.name }) {
-      entity.count = Int16(item.count)
-      saveContext()
+  func minusItem(_ item: CartItem) {
+    if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
+      if item.count > 1 {
+        items[index].count -= 1
+        coredataManager.update(items[index])
+      } else {
+        coredataManager.delete(items[index])
+        items.remove(at: index)
+      }
     }
   }
 
-  func deleteCartItem(_ item: CartItem) {
-    if let entity = itemsEntity.first(where: { $0.name == item.shoppingList.name }) {
-      container.viewContext.delete(entity)
-      saveContext()
+  func increaseItem(_ item: CartItem) {
+    if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
+      items[index].count += 1
+      coredataManager.update(items[index])
     }
   }
 
   func clearCart() {
     items.removeAll()
-    for item in itemsEntity {
-      container.viewContext.delete(item)
-      saveContext()
-    }
+    coredataManager.deleteAll()
   }
 
-
   func getCartItemsFromCoreData() {
-    let request = NSFetchRequest<CartItemEntity>(entityName: "CartItemEntity")
-    request.sortDescriptors = [NSSortDescriptor(keyPath: \CartItemEntity.timestamp, ascending: true)]
+    if let result = coredataManager.fetchAllResult() {
+      coredataManager.itemsEntity = result
 
-    do {
-      itemsEntity = try container.viewContext.fetch(request)
-
-      for item in itemsEntity {
+      for item in coredataManager.itemsEntity {
         let shopList = ShoppingList(barcode: item.barcode!, name: item.name!, unit: item.unit!, price: item.price)
         var cartItem = CartItem(shopList, promotion: item.isPromotion!)
         cartItem.count = Int(item.count)
         items.append(cartItem)
       }
-    } catch {
-      print(error.localizedDescription)
+    } else {
+      print(" Error when fetch coredata result.")
     }
   }
 
-
   func getOutput() {
     outputContent = ""
-    outputContent.append("***<没钱赚商店>收据***\n")
+    outputContent.append("***收据***\n")
     for item in items {
       outputContent += item.outputContent()
     }
@@ -131,18 +110,22 @@ class ShoppingListViewModel: ObservableObject{
 
     self.isPayReady = self.items.isEmpty
   }
-  
+
   func fetchData() {
     let shoppingdata: AnyPublisher<[ShoppingList], Error> = shoppingListServer.getDataFromRemote(url: shoppingListUrl)
-    shoppingdata.sink(receiveCompletion: { completion in
+    shoppingdata
+      .receive(on: DispatchQueue.main)
+      .sink(receiveCompletion: { completion in
       print(completion)
     }, receiveValue: { [weak self] data in
       self?.listContent = data
     })
     .store(in: &subscription)
-    
+
     let data: AnyPublisher<[String], Error> = shoppingListServer.getDataFromRemote(url: promotionsUrl)
-    data.sink(receiveCompletion: { completion in
+    data
+      .receive(on: DispatchQueue.main)
+      .sink(receiveCompletion: { completion in
       print(completion)
     }, receiveValue: { [weak self] data in
       self?.promotiosList = data
@@ -150,6 +133,7 @@ class ShoppingListViewModel: ObservableObject{
     .store(in: &subscription)
 
     $promotiosList
+      .receive(on: DispatchQueue.main)
       .sink { value in
         self.ListContents.removeAll()
         self.listContent.forEach({
@@ -164,53 +148,6 @@ class ShoppingListViewModel: ObservableObject{
       .store(in: &subscription)
   }
 
-  func addToCart(_ item: shoppingItem) {
-    if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
-      items[index].count += 1
-      updateCartItem(items[index])
-//      calculatePrices()
-    } else {
-      let cartItem = CartItem(item.shoppingList, promotion: item.isPromotions)
-      items.append(cartItem)
-      addCartItem(cartItem)
-//      calculatePrices()
-    }
-  }
-  
-  func minusItem(_ item: CartItem) {
-    if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
-      if item.count > 1 {
-        items[index].count -= 1
-        updateCartItem(items[index])
-//        calculatePrices()
-      } else {
-        deleteCartItem(items[index])
-        items.remove(at: index)
-//        calculatePrices()
-      }
-    }
-  }
-  
-  func increaseItem(_ item: CartItem) {
-    if let index = items.firstIndex(where: {$0.shoppingList.name == item.shoppingList.name}) {
-      items[index].count += 1
-      updateCartItem(items[index])
-//      calculatePrices()
-    }
-  }
 }
 
-extension CartItemEntity {
-    convenience init(context: NSManagedObjectContext, item: CartItem) {
-        self.init(context: context)
-
-        self.barcode = item.shoppingList.barcode
-        self.name = item.shoppingList.name
-        self.price = item.shoppingList.price
-        self.unit = item.shoppingList.unit
-        self.isPromotion = item.isPromotions
-        self.count = Int16(item.count)
-        self.timestamp = Date()
-    }
-  }
 

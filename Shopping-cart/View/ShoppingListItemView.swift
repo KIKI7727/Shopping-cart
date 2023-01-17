@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-
 struct ShoppingListItemView: View {
   @EnvironmentObject var viewModel: ShoppingListViewModel
-  
+  @State private var showingAlert = false
+
   var content: ShoppingList
   var isPromotions: String
   
@@ -21,10 +21,14 @@ struct ShoppingListItemView: View {
           .font(.system(size: 18, weight: .bold, design:  .rounded))
         Spacer()
         Button(action: {
+          showingAlert = true
           viewModel.addToCart(shoppingItem(shoppingList: content, isPromotions: isPromotions))
         }, label: {
           Image(systemName: "plus.circle")
         })
+        .alert("\(content.name)已加入购物车", isPresented: $showingAlert) {
+                    Button("OK", role: .cancel) { }
+                }
         .buttonStyle(BorderlessButtonStyle())
       }
       Text("条形码：\(content.barcode)")

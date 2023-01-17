@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-
 struct ShoppingListView: View {
   @EnvironmentObject var viewModel: ShoppingListViewModel
   var body: some View {

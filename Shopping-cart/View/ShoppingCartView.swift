@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct ShoppingCartView: View {
   @EnvironmentObject var viewModel: ShoppingListViewModel
 
@@ -55,9 +54,6 @@ struct ShoppingCartView: View {
       }
       .frame(width: UIScreen.main.bounds.width - 50)
       .navigationBarTitle("购物车", displayMode: .inline)
-//      .onAppear {
-//          viewModel.calculatePrices()
-//      }
     }
 
   }

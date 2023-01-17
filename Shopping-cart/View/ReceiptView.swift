@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct ReceiptView: View {
   @EnvironmentObject var viewModel: ShoppingListViewModel
   
@@ -44,7 +43,7 @@ struct ReceiptView: View {
     HStack(spacing: 5) {
       Text("名称: \(item.shoppingList.name), 数量: \(item.count), 价格：\(item.totalPrice(), specifier: "%.2f")")
     }
-    .padding(.vertical, 5)
+    .padding(.vertical, 10)
   }
   struct ReceiptView_Previews: PreviewProvider {
     static var previews: some View {
